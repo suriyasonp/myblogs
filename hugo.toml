@@ -1,0 +1,116 @@
+baseURL = 'https://suriyasonphu.com/'
+languageCode = 'en-us'
+title = 'TECHFOR by Suriya Sonphu'
+theme = 'hugo-theme-stack'
+
+enableRobotsTXT = true
+
+# Taxonomy configuration
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+# Menu configuration
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+    [menu.main.params]
+      icon = "home"
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 20
+    [menu.main.params]
+      icon = "archives"
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 30 
+    [menu.main.params]
+      icon = "categories"
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40
+     [menu.main.params]
+      icon = ""
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 50
+     [menu.main.params]
+      icon = "archives"
+    
+# Pagination settings
+paginate = 5
+
+# The Stack theme configuration
+[params]
+  mainSections = ["post", "posts"]
+  description = "My personal blog. Knowledge sharing blog about technology and life."
+  favicon = "/favicon.ico"
+  keywords = ["สุริยา สนภู่", "suriyasonphu", "Suriya Sonphu" ,"blog", "technology", "programming", "dailylife", "reading"]
+
+  [params.dateFormat]
+    published = "Jan 02, 2006"
+    lastUpdated = "Jan 02, 2006 15:04 MST"
+  
+  [params.sidebar]
+     emoji = "🧠"
+    subtitle = "Knowledge sharing blog about technology and life"
+
+  [params.footer]
+    since = 2025
+    customText = ""
+
+  [params.article]
+    headingAnchor = false
+    math = false
+    readingTime = true
+
+  [params.sidebar.avatar]
+    enabled = true
+    local = false
+    src = "/assets/favicon/android-chrome-192x192.png"
+
+  [params.colorScheme]
+    toggle = true
+    default = "auto"
+
+  ## Widgets
+  [[widgets.homepage]]
+  type = "search"
+
+  [[widgets.homepage]]
+  type = "archives"
+
+  [widgets.homepage.params]
+  limit = 5
+
+  [[widgets.homepage]]
+  type = "categories"
+
+  [widgets.homepage.params]
+  limit = 10
+
+  [[widgets.homepage]]
+  type = "tag-cloud"
+
+  [widgets.homepage.params]
+  limit = 10
+
+  [[widgets.page]]
+  type = "toc"
+
+
+
+
+
