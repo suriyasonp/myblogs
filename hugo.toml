@@ -23,7 +23,7 @@ enableRobotsTXT = true
   [[menu.main]]
     identifier = "posts"
     name = "Posts"
-    url = "/posts/"
+    url = "/post/"
     weight = 20
     [menu.main.params]
       icon = "archives"
@@ -86,26 +86,13 @@ paginate = 5
     default = "auto"
 
   ## Widgets
-  [[widgets.homepage]]
-  type = "search"
-
-  [[widgets.homepage]]
-  type = "archives"
-
-  [widgets.homepage.params]
-  limit = 5
-
-  [[widgets.homepage]]
-  type = "categories"
-
-  [widgets.homepage.params]
-  limit = 10
-
-  [[widgets.homepage]]
-  type = "tag-cloud"
-
-  [widgets.homepage.params]
-  limit = 10
+  [params.widgets]
+    homepage = [
+      { type = "search", params = { limit = 5 } },
+      { type = "archives", params = { limit = 5 } },
+      { type = "categories", params = { limit = 10 } },
+      { type = "tag-cloud", params = { limit = 10 } }
+    ]
 
   [[widgets.page]]
   type = "toc"

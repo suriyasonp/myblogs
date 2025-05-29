@@ -5,6 +5,15 @@
         <link>http://localhost:1313/tags/</link>
         <description>Recent content in Tags on TECHFOR by Suriya Sonphu</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+        <language>en-us</language>
+        <lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>General, Stay-Reading</title>
+        <link>http://localhost:1313/tags/general-stay-reading/</link>
+        <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/general-stay-reading/</guid>
+        <description></description>
+        </item>
+        
     </channel>
 </rss>
