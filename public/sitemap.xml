@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/post/hello-world/</loc>
+    <loc>http://localhost:1313/tags/blog/</loc>
     <lastmod>2025-05-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
@@ -11,16 +11,10 @@
     <loc>http://localhost:1313/tags/css/</loc>
     <lastmod>2025-05-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/general/</loc>
-    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/general/</loc>
-    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/hello-world/</loc>
-    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/html/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2025-05-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/markdown/</loc>
@@ -32,7 +26,7 @@
     <loc>http://localhost:1313/post/</loc>
     <lastmod>2025-05-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/stay-reading/</loc>
+    <loc>http://localhost:1313/tags/static-site-generator/</loc>
     <lastmod>2025-05-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
@@ -46,6 +40,15 @@
   </url><url>
     <loc>http://localhost:1313/tags/themes/</loc>
     <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/web-development/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/how-to-setup-hugo/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/general/</loc>
+    <lastmod>2025-05-25T21:25:45+07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/mindfulness/</loc>
     <lastmod>2025-05-25T21:25:45+07:00</lastmod>
@@ -61,6 +64,18 @@
   </url><url>
     <loc>http://localhost:1313/post/mind-and-nature/</loc>
     <lastmod>2025-05-25T21:25:45+07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/general/</loc>
+    <lastmod>2025-05-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/hello-world/</loc>
+    <lastmod>2025-05-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/hello-world/</loc>
+    <lastmod>2025-05-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/stay-reading/</loc>
+    <lastmod>2025-05-24T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/page/archives/</loc>
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>

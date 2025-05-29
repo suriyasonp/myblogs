@@ -57,3 +57,11 @@ image: people-stand.webp
 ## บทสรุป
 
 ความเชื่อมโยงระหว่างจิตใจมนุษย์กับธรรมชาติเป็นความสัมพันธ์ที่ลึกซึ้งและซับซ้อน สะท้อนให้เห็นทั้งในศิลปะ วัฒนธรรม และวิทยาศาสตร์ การเข้าใจและใช้ประโยชน์จากความเชื่อมโยงนี้สามารถช่วยให้เราดำเนินชีวิตอย่างมีความสุขและสมดุลมากขึ้น ในโลกที่เต็มไปด้วยเทคโนโลยีและความเร่งรีบ การกลับไปเชื่อมโยงกับธรรมชาติอาจเป็นหนทางสู่การฟื้นฟูจิตใจและการค้นพบความหมายที่แท้จริงของการมีชีวิต
+
+## อ้างอิง
+1. Carl Jung. (1952). Synchronicity: An Acausal Connecting Principle. Princeton University Press.
+2. Keller, M.C., Fredrickson, B.L., Ybarra, O., et al. (2005). A warm heart and a clear head: The contingent effects of weather on mood and cognition. Psychological Science, 16(9), 724–731.
+3. Noah, J.A., et al. (2014). Neural correlates of weather-induced mood changes. Frontiers in Human Neuroscience, 8, 736. 
+4. Eysenck, M. (2004). Principles of Cognitive Psychology. Psychology Press.
+5. Capaldi, C.A., Dopko, R.L., & Zelenski, J.M. (2014). The relationship between nature connectedness and happiness: A meta-analysis. Journal of Environmental Psychology, 40, 300–308.
+6. Mental Health Foundation. (2021). Nature and mental health. https://www.mentalhealth.org.uk
