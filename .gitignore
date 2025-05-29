@@ -17,3 +17,7 @@ Thumbs.db
 
 # Ignore local config
 config/_default/params.toml
+
+public/
+resources/
+.hugo_build.lock
