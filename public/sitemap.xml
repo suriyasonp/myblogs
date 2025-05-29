@@ -2,61 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/post/hello-world/</loc>
+    <loc>https://suriyasonphu.com/post/hello-world/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://suriyasonphu.com/categories/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://suriyasonphu.com/tags/css/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://suriyasonphu.com/categories/general/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://suriyasonphu.com/tags/general/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://suriyasonphu.com/tags/hello-world/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://suriyasonphu.com/tags/html/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://suriyasonphu.com/tags/markdown/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://suriyasonphu.com/post/markdown-syntax/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://suriyasonphu.com/post/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://suriyasonphu.com/tags/stay-reading/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://suriyasonphu.com/tags/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://suriyasonphu.com/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://suriyasonphu.com/categories/technology/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://suriyasonphu.com/tags/themes/</loc>
+    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://suriyasonphu.com/page/archives/</loc>
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/css/</loc>
-    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/html/</loc>
-    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/markdown/</loc>
-    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/post/markdown-syntax/</loc>
-    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/technology/</loc>
-    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/themes/</loc>
-    <lastmod>2025-05-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/page/archives/</loc>
+    <loc>https://suriyasonphu.com/page/</loc>
     <lastmod>2022-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/general/</loc>
-    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
+    <loc>https://suriyasonphu.com/page/links/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/general/</loc>
-    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
+    <loc>https://suriyasonphu.com/page/search/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/hello-world/</loc>
-    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/page/</loc>
-    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/stay-reading/</loc>
-    <lastmod>2022-03-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/page/links/</loc>
-  </url><url>
-    <loc>http://localhost:1313/page/search/</loc>
-  </url><url>
-    <loc>http://localhost:1313/series/</loc>
+    <loc>https://suriyasonphu.com/series/</loc>
   </url>
 </urlset>
