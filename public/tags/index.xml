@@ -62,6 +62,38 @@
         <guid>http://localhost:1313/tags/themes/</guid>
         <description></description>
         </item>
+        <item>
+        <title>Mindfulness</title>
+        <link>http://localhost:1313/tags/mindfulness/</link>
+        <pubDate>Sun, 25 May 2025 21:25:45 +0700</pubDate>
+        
+        <guid>http://localhost:1313/tags/mindfulness/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Nature</title>
+        <link>http://localhost:1313/tags/nature/</link>
+        <pubDate>Sun, 25 May 2025 21:25:45 +0700</pubDate>
+        
+        <guid>http://localhost:1313/tags/nature/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Philosophy</title>
+        <link>http://localhost:1313/tags/philosophy/</link>
+        <pubDate>Sun, 25 May 2025 21:25:45 +0700</pubDate>
+        
+        <guid>http://localhost:1313/tags/philosophy/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Psychology</title>
+        <link>http://localhost:1313/tags/psychology/</link>
+        <pubDate>Sun, 25 May 2025 21:25:45 +0700</pubDate>
+        
+        <guid>http://localhost:1313/tags/psychology/</guid>
+        <description></description>
+        </item>
         
     </channel>
 </rss>
