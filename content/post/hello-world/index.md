@@ -7,7 +7,9 @@ image: cover.jpg
 categories:
     - general
 tags:
-    - general, stay-reading
+    - general 
+    - stay-reading
+    - hello-world
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
