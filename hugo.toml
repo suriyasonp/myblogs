@@ -49,7 +49,7 @@ paginate = 5
 [params]
   mainSections = ["post", "posts"]
   description = "My personal blog. Knowledge sharing blog about technology and life."
-  favicon = "/assets/favicon/favicon.ico"
+  favicon = "favicon.ico"
   keywords = ["สุริยา สนภู่", "suriyasonphu", "Suriya Sonphu", "blog", "technology", "programming", "dailylife", "reading", "software", "tutorials", "reviews"]
   canonicalURL = "https://suriyasonphu.com/"
   # Social preview image for sharing
@@ -80,7 +80,7 @@ paginate = 5
   [params.sidebar.avatar]
     enabled = true
     local = false
-    src = "/assets/favicon/android-chrome-192x192.png"
+    src = "assets/favicon/android-chrome-192x192.png"
 
   [params.colorScheme]
     toggle = true
