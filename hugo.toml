@@ -50,7 +50,15 @@ paginate = 5
   mainSections = ["post", "posts"]
   description = "My personal blog. Knowledge sharing blog about technology and life."
   favicon = "/favicon.ico"
-  keywords = ["สุริยา สนภู่", "suriyasonphu", "Suriya Sonphu" ,"blog", "technology", "programming", "dailylife", "reading"]
+  keywords = ["สุริยา สนภู่", "suriyasonphu", "Suriya Sonphu", "blog", "technology", "programming", "dailylife", "reading", "software", "tutorials", "reviews"]
+  canonicalURL = "https://suriyasonphu.com/"
+  # Social preview image for sharing
+  images = ["/assets/favicon/android-chrome-512x512.png"]
+
+  # Open Graph and Twitter Card settings
+  [params.opengraph]
+    twitter = { site = "@suriyasonphu", card = "summary_large_image" }
+    defaultImage = { opengraph = { enabled = true, local = true, src = "/assets/favicon/android-chrome-512x512.png" } }
 
   [params.dateFormat]
     published = "Jan 02, 2006"
@@ -89,6 +97,16 @@ paginate = 5
 
   [[widgets.page]]
   type = "toc"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML", "RSS"]
+
+[params.author]
+  name = "Suriya Sonphu"
+  email = ""
 
 
 
