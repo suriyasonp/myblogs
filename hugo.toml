@@ -34,13 +34,6 @@ enableRobotsTXT = true
     weight = 30 
     [menu.main.params]
       icon = "categories"
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 40
-     [menu.main.params]
-      icon = ""
     
 # Pagination settings
 paginate = 5
