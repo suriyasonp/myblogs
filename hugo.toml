@@ -41,13 +41,6 @@ enableRobotsTXT = true
     weight = 40
      [menu.main.params]
       icon = ""
-  [[menu.main]]
-    identifier = "archives"
-    name = "Archives"
-    url = "/archives/"
-    weight = 50
-     [menu.main.params]
-      icon = "archives"
     
 # Pagination settings
 paginate = 5
