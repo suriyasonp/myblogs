@@ -80,7 +80,7 @@ paginate = 5
   [params.sidebar.avatar]
     enabled = true
     local = false
-    src = "assets/favicon/android-chrome-192x192.png"
+    src = "/assets/favicon/android-chrome-192x192.png"
 
   [params.colorScheme]
     toggle = true
