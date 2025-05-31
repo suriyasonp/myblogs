@@ -64,6 +64,8 @@ paginate = 5
   # Social preview image for sharing
   images = ["/assets/favicon/android-chrome-512x512.png"]
 
+  googleAnalytics = "G-REDTWM8K0W"
+
   # Open Graph and Twitter Card settings
   [params.opengraph]
     twitter = { site = "@suriyasonphu", card = "summary_large_image" }
