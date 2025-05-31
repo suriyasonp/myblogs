@@ -22,7 +22,7 @@ image: brain-ai.png
 
 In an era where artificial intelligence is rapidly transforming our world, we must pause and ask ourselves: Who are we? What is AI? And how can we move forward together?
 
-This book will take you on an exploration of the path that humans and AI walk together, through deep yet accessible perspectives, to prepare us for the future that is coming.
+This article will take you on an exploration of the path that humans and AI walk together, through deep yet accessible perspectives, to prepare us for the future that is coming.
 
 ---
 
