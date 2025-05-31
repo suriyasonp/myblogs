@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>General on TECHFOR โดย สุริยา สนภู่</title>
+        <title>General on TECHFOR by Suriya Sonphu</title>
         <link>http://localhost:1313/categories/general/</link>
-        <description>Recent content in General on TECHFOR โดย สุริยา สนภู่</description>
+        <description>Recent content in General on TECHFOR by Suriya Sonphu</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>th</language>
         <lastBuildDate>Sun, 25 May 2025 21:25:45 +0700</lastBuildDate><atom:link href="http://localhost:1313/categories/general/index.xml" rel="self" type="application/rss+xml" /><item>
@@ -66,8 +66,8 @@
         <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/post/hello-world/</guid>
-        <description>&lt;img src="http://localhost:1313/post/hello-world/cover.jpg" alt="Featured image of post Hello World" /&gt;&lt;p&gt;Welcome to Hugo theme Stack. This is your first post. Edit or delete it, then start writing!&lt;/p&gt;
-&lt;p&gt;For more information about this theme, check the documentation: &lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+        <description>&lt;img src="http://localhost:1313/post/hello-world/helloworld.jpg" alt="Featured image of post Hello World" /&gt;&lt;p&gt;ยินดีต้อนรับสู่ Hugo theme Stack นี่คือโพสต์แรกของคุณ แก้ไขหรือลบมัน แล้วเริ่มเขียนได้เลย!&lt;/p&gt;
+&lt;p&gt;สำหรับข้อมูลเพิ่มเติมเกี่ยวกับธีมนี้ สามารถดูได้ที่เอกสาร: &lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://stack.jimmycai.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Want a site like this? Check out &lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack-starter&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;hugo-theme-stack-stater&lt;/a&gt;&lt;/p&gt;

@@ -11,7 +11,7 @@ enableRobotsTXT = true
   [languages.th]
     languageName = "ไทย"
     weight = 1
-    title = "TECHFOR โดย สุริยา สนภู่" # Thai title
+    title = "TECHFOR by Suriya Sonphu" # Thai title
     [languages.th.params]
       description = "บล็อกส่วนตัว แบ่งปันความรู้เกี่ยวกับเทคโนโลยีและชีวิตประจำวัน" # Thai description
   [languages.en]
