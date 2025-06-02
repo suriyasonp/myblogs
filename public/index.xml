@@ -598,25 +598,26 @@
 </description>
         </item>
         <item>
-        <title>About</title>
+        <title>เกี่ยวกับ</title>
         <link>http://localhost:1313/page/about/</link>
         <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/page/about/</guid>
-        <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me
-&lt;/h2&gt;&lt;p&gt;Hi, I&amp;rsquo;m Suriya Sonphu. This is my personal blog where I share my thoughts and experiences about technology, programming, and life in general.&lt;/p&gt;
-&lt;h2 id=&#34;about-this-blog&#34;&gt;About This Blog
-&lt;/h2&gt;&lt;p&gt;This blog is built with &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Hugo&lt;/a&gt; using the &lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Stack theme&lt;/a&gt;. Here, I write about:&lt;/p&gt;
+        <description>&lt;h2 id=&#34;เกยวกบผม&#34;&gt;เกี่ยวกับผม
+&lt;/h2&gt;&lt;p&gt;สวัสดีครับ ผมชื่อสุริยา นี่คือบล็อกส่วนตัวที่ผมแบ่งปันความคิดและประสบการณ์เกี่ยวกับเทคโนโลยี การเขียนโปรแกรม และสิ่งมีประโยชน์ต่างๆ ที่ได้จากการรักการอ่านของผม ซึ่งผมได้แบ่งปันเรื่องราวดีๆ จากหนังสือผ่านเพจ &amp;ldquo;Stay Reading&amp;rdquo; ด้วย&lt;/p&gt;
+&lt;h2 id=&#34;เกยวกบบลอกน&#34;&gt;เกี่ยวกับบล็อกนี้
+&lt;/h2&gt;&lt;p&gt;บล็อกนี้สร้างด้วย &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo&lt;/a&gt; โดยใช้ธีม &lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Stack&lt;/a&gt; ที่นี่ผมเขียนเกี่ยวกับ:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Technology&lt;/li&gt;
-&lt;li&gt;Programming&lt;/li&gt;
-&lt;li&gt;Software Development&lt;/li&gt;
-&lt;li&gt;Personal experiences&lt;/li&gt;
-&lt;li&gt;And more&amp;hellip;&lt;/li&gt;
+&lt;li&gt;เทคโนโลยี&lt;/li&gt;
+&lt;li&gt;การเขียนโปรแกรม&lt;/li&gt;
+&lt;li&gt;การพัฒนาซอฟต์แวร์&lt;/li&gt;
+&lt;li&gt;ประสบการณ์ส่วนตัว&lt;/li&gt;
+&lt;li&gt;บทเรียนและความรู้จากหนังสือ&lt;/li&gt;
+&lt;li&gt;และอื่นๆ อีกมากมาย&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Feel free to explore and connect with me through the social links provided.&lt;/p&gt;
+&lt;p&gt;ยินดีที่จะเชื่อมต่อกับคุณผ่านโซเชียลมีเดียด้านบน&lt;/p&gt;
 </description>
         </item>
         <item>

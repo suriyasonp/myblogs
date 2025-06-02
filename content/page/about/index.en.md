@@ -22,11 +22,16 @@ links:
     description: My professional profile
     website: https://www.linkedin.com/in/suriyasonphu
     image: https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg
+  - title: Stay Reading
+    description: My Facebook page about book reviews and reading insights
+    website: https://www.facebook.com/stayreading88
+    image: /icons/Facebook_Logo_Primary.png
+layout: "single"
 ---
 
 ## About Me
 
-Hi, I'm Suriya Sonphu. This is my personal blog where I share my thoughts and experiences about technology, programming, and life in general.
+Hi, I'm Suriya Sonphu. This is my personal blog where I share my thoughts and experiences about technology, programming, and life in general. I'm also passionate about reading and sharing knowledge through my Facebook page "Stay Reading".
 
 ## About This Blog
 
@@ -36,6 +41,7 @@ This blog is built with [Hugo](https://gohugo.io/) using the [Stack theme](https
 - Programming
 - Software Development
 - Personal experiences
+- Book insights and learning
 - And more...
 
 Feel free to explore and connect with me through the social links provided. 
