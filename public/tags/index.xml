@@ -2,168 +2,168 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on TECHFOR by Suriya Sonphu</title>
-        <link>http://192.168.1.7:1313/tags/</link>
+        <link>https://suriyasonphu.com/tags/</link>
         <description>Recent content in Tags on TECHFOR by Suriya Sonphu</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>th</language>
-        <lastBuildDate>Sat, 31 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://192.168.1.7:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 31 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://suriyasonphu.com/tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>AGI</title>
-        <link>http://192.168.1.7:1313/tags/agi/</link>
+        <link>https://suriyasonphu.com/tags/agi/</link>
         <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/agi/</guid>
+        <guid>https://suriyasonphu.com/tags/agi/</guid>
         <description></description>
         </item>
         <item>
         <title>AI</title>
-        <link>http://192.168.1.7:1313/tags/ai/</link>
+        <link>https://suriyasonphu.com/tags/ai/</link>
         <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/ai/</guid>
+        <guid>https://suriyasonphu.com/tags/ai/</guid>
         <description></description>
         </item>
         <item>
         <title>Machine Learning</title>
-        <link>http://192.168.1.7:1313/tags/machine-learning/</link>
+        <link>https://suriyasonphu.com/tags/machine-learning/</link>
         <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/machine-learning/</guid>
+        <guid>https://suriyasonphu.com/tags/machine-learning/</guid>
         <description></description>
         </item>
         <item>
         <title>ความคิดมนุษย์</title>
-        <link>http://192.168.1.7:1313/tags/%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%A1%E0%B8%99%E0%B8%B8%E0%B8%A9%E0%B8%A2%E0%B9%8C/</link>
+        <link>https://suriyasonphu.com/tags/%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%A1%E0%B8%99%E0%B8%B8%E0%B8%A9%E0%B8%A2%E0%B9%8C/</link>
         <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%A1%E0%B8%99%E0%B8%B8%E0%B8%A9%E0%B8%A2%E0%B9%8C/</guid>
+        <guid>https://suriyasonphu.com/tags/%E0%B8%84%E0%B8%A7%E0%B8%B2%E0%B8%A1%E0%B8%84%E0%B8%B4%E0%B8%94%E0%B8%A1%E0%B8%99%E0%B8%B8%E0%B8%A9%E0%B8%A2%E0%B9%8C/</guid>
         <description></description>
         </item>
         <item>
         <title>เทคโนโลยีอนาคต</title>
-        <link>http://192.168.1.7:1313/tags/%E0%B9%80%E0%B8%97%E0%B8%84%E0%B9%82%E0%B8%99%E0%B9%82%E0%B8%A5%E0%B8%A2%E0%B8%B5%E0%B8%AD%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%95/</link>
+        <link>https://suriyasonphu.com/tags/%E0%B9%80%E0%B8%97%E0%B8%84%E0%B9%82%E0%B8%99%E0%B9%82%E0%B8%A5%E0%B8%A2%E0%B8%B5%E0%B8%AD%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%95/</link>
         <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/%E0%B9%80%E0%B8%97%E0%B8%84%E0%B9%82%E0%B8%99%E0%B9%82%E0%B8%A5%E0%B8%A2%E0%B8%B5%E0%B8%AD%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%95/</guid>
+        <guid>https://suriyasonphu.com/tags/%E0%B9%80%E0%B8%97%E0%B8%84%E0%B9%82%E0%B8%99%E0%B9%82%E0%B8%A5%E0%B8%A2%E0%B8%B5%E0%B8%AD%E0%B8%99%E0%B8%B2%E0%B8%84%E0%B8%95/</guid>
         <description></description>
         </item>
         <item>
         <title>Blog</title>
-        <link>http://192.168.1.7:1313/tags/blog/</link>
+        <link>https://suriyasonphu.com/tags/blog/</link>
         <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/blog/</guid>
+        <guid>https://suriyasonphu.com/tags/blog/</guid>
         <description></description>
         </item>
         <item>
         <title>Hugo</title>
-        <link>http://192.168.1.7:1313/tags/hugo/</link>
+        <link>https://suriyasonphu.com/tags/hugo/</link>
         <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/hugo/</guid>
+        <guid>https://suriyasonphu.com/tags/hugo/</guid>
         <description></description>
         </item>
         <item>
         <title>Static Site Generator</title>
-        <link>http://192.168.1.7:1313/tags/static-site-generator/</link>
+        <link>https://suriyasonphu.com/tags/static-site-generator/</link>
         <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/static-site-generator/</guid>
+        <guid>https://suriyasonphu.com/tags/static-site-generator/</guid>
         <description></description>
         </item>
         <item>
         <title>Web Development</title>
-        <link>http://192.168.1.7:1313/tags/web-development/</link>
+        <link>https://suriyasonphu.com/tags/web-development/</link>
         <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/web-development/</guid>
+        <guid>https://suriyasonphu.com/tags/web-development/</guid>
         <description></description>
         </item>
         <item>
         <title>Css</title>
-        <link>http://192.168.1.7:1313/tags/css/</link>
+        <link>https://suriyasonphu.com/tags/css/</link>
         <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/css/</guid>
+        <guid>https://suriyasonphu.com/tags/css/</guid>
         <description></description>
         </item>
         <item>
         <title>Html</title>
-        <link>http://192.168.1.7:1313/tags/html/</link>
+        <link>https://suriyasonphu.com/tags/html/</link>
         <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/html/</guid>
+        <guid>https://suriyasonphu.com/tags/html/</guid>
         <description></description>
         </item>
         <item>
         <title>Markdown</title>
-        <link>http://192.168.1.7:1313/tags/markdown/</link>
+        <link>https://suriyasonphu.com/tags/markdown/</link>
         <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/markdown/</guid>
+        <guid>https://suriyasonphu.com/tags/markdown/</guid>
         <description></description>
         </item>
         <item>
         <title>Themes</title>
-        <link>http://192.168.1.7:1313/tags/themes/</link>
+        <link>https://suriyasonphu.com/tags/themes/</link>
         <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/themes/</guid>
+        <guid>https://suriyasonphu.com/tags/themes/</guid>
         <description></description>
         </item>
         <item>
         <title>Mindfulness</title>
-        <link>http://192.168.1.7:1313/tags/mindfulness/</link>
+        <link>https://suriyasonphu.com/tags/mindfulness/</link>
         <pubDate>Sun, 25 May 2025 21:25:45 +0700</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/mindfulness/</guid>
+        <guid>https://suriyasonphu.com/tags/mindfulness/</guid>
         <description></description>
         </item>
         <item>
         <title>Nature</title>
-        <link>http://192.168.1.7:1313/tags/nature/</link>
+        <link>https://suriyasonphu.com/tags/nature/</link>
         <pubDate>Sun, 25 May 2025 21:25:45 +0700</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/nature/</guid>
+        <guid>https://suriyasonphu.com/tags/nature/</guid>
         <description></description>
         </item>
         <item>
         <title>Philosophy</title>
-        <link>http://192.168.1.7:1313/tags/philosophy/</link>
+        <link>https://suriyasonphu.com/tags/philosophy/</link>
         <pubDate>Sun, 25 May 2025 21:25:45 +0700</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/philosophy/</guid>
+        <guid>https://suriyasonphu.com/tags/philosophy/</guid>
         <description></description>
         </item>
         <item>
         <title>Psychology</title>
-        <link>http://192.168.1.7:1313/tags/psychology/</link>
+        <link>https://suriyasonphu.com/tags/psychology/</link>
         <pubDate>Sun, 25 May 2025 21:25:45 +0700</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/psychology/</guid>
+        <guid>https://suriyasonphu.com/tags/psychology/</guid>
         <description></description>
         </item>
         <item>
         <title>General</title>
-        <link>http://192.168.1.7:1313/tags/general/</link>
+        <link>https://suriyasonphu.com/tags/general/</link>
         <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/general/</guid>
+        <guid>https://suriyasonphu.com/tags/general/</guid>
         <description></description>
         </item>
         <item>
         <title>Hello-World</title>
-        <link>http://192.168.1.7:1313/tags/hello-world/</link>
+        <link>https://suriyasonphu.com/tags/hello-world/</link>
         <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/hello-world/</guid>
+        <guid>https://suriyasonphu.com/tags/hello-world/</guid>
         <description></description>
         </item>
         <item>
         <title>Stay-Reading</title>
-        <link>http://192.168.1.7:1313/tags/stay-reading/</link>
+        <link>https://suriyasonphu.com/tags/stay-reading/</link>
         <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/tags/stay-reading/</guid>
+        <guid>https://suriyasonphu.com/tags/stay-reading/</guid>
         <description></description>
         </item>
         

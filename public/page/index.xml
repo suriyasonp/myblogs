@@ -2,24 +2,46 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Pages on TECHFOR by Suriya Sonphu</title>
-        <link>http://192.168.1.7:1313/page/</link>
+        <link>https://suriyasonphu.com/page/</link>
         <description>Recent content in Pages on TECHFOR by Suriya Sonphu</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>th</language>
-        <lastBuildDate>Sun, 06 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://192.168.1.7:1313/page/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Archives</title>
-        <link>http://192.168.1.7:1313/page/archives/</link>
-        <pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate>
+        <lastBuildDate>Wed, 29 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://suriyasonphu.com/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About</title>
+        <link>https://suriyasonphu.com/page/about/</link>
+        <pubDate>Wed, 29 May 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/page/archives/</guid>
+        <guid>https://suriyasonphu.com/page/about/</guid>
+        <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me
+&lt;/h2&gt;&lt;p&gt;Hi, I&amp;rsquo;m Suriya Sonphu. This is my personal blog where I share my thoughts and experiences about technology, programming, and life in general.&lt;/p&gt;
+&lt;h2 id=&#34;about-this-blog&#34;&gt;About This Blog
+&lt;/h2&gt;&lt;p&gt;This blog is built with &lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo&lt;/a&gt; using the &lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Stack theme&lt;/a&gt;. Here, I write about:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Technology&lt;/li&gt;
+&lt;li&gt;Programming&lt;/li&gt;
+&lt;li&gt;Software Development&lt;/li&gt;
+&lt;li&gt;Personal experiences&lt;/li&gt;
+&lt;li&gt;And more&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Feel free to explore and connect with me through the social links provided.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>https://suriyasonphu.com/page/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://suriyasonphu.com/page/archives/</guid>
         <description></description>
         </item>
         <item>
         <title>Links</title>
-        <link>http://192.168.1.7:1313/page/links/</link>
+        <link>https://suriyasonphu.com/page/links/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/page/links/</guid>
+        <guid>https://suriyasonphu.com/page/links/</guid>
         <description>&lt;p&gt;To use this feature, add &lt;code&gt;links&lt;/code&gt; section to frontmatter.&lt;/p&gt;
 &lt;p&gt;This page&amp;rsquo;s frontmatter:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;links&lt;/span&gt;:
@@ -32,10 +54,10 @@
         </item>
         <item>
         <title>Search</title>
-        <link>http://192.168.1.7:1313/page/search/</link>
+        <link>https://suriyasonphu.com/page/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/page/search/</guid>
+        <guid>https://suriyasonphu.com/page/search/</guid>
         <description></description>
         </item>
         

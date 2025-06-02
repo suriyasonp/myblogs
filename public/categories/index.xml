@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on TECHFOR by Suriya Sonphu</title>
-        <link>http://192.168.1.7:1313/categories/</link>
+        <link>https://suriyasonphu.com/categories/</link>
         <description>Recent content in Categories on TECHFOR by Suriya Sonphu</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>th</language>
-        <lastBuildDate>Sat, 31 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://192.168.1.7:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 31 May 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://suriyasonphu.com/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Techology</title>
-        <link>http://192.168.1.7:1313/categories/technology/</link>
+        <link>https://suriyasonphu.com/categories/technology/</link>
         <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://192.168.1.7:1313/categories/technology/</guid>
+        <guid>https://suriyasonphu.com/categories/technology/</guid>
         <description></description>
         </item>
         <item>
         <title>General</title>
-        <link>http://192.168.1.7:1313/categories/general/</link>
+        <link>https://suriyasonphu.com/categories/general/</link>
         <pubDate>Sun, 25 May 2025 21:25:45 +0700</pubDate>
         
-        <guid>http://192.168.1.7:1313/categories/general/</guid>
+        <guid>https://suriyasonphu.com/categories/general/</guid>
         <description></description>
         </item>
         
