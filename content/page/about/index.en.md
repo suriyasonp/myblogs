@@ -13,6 +13,15 @@ menu:
         weight: 50
         params:
             icon: user
+links:
+  - title: GitHub
+    description: My GitHub profile and projects
+    website: https://github.com/suriyasonp
+    image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+  - title: LinkedIn
+    description: My professional profile
+    website: https://www.linkedin.com/in/suriyasonphu
+    image: https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg
 ---
 
 ## About Me
