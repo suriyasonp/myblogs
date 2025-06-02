@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>General on TECHFOR by Suriya Sonphu</title>
-        <link>http://localhost:1313/categories/general/</link>
+        <link>http://192.168.1.7:1313/categories/general/</link>
         <description>Recent content in General on TECHFOR by Suriya Sonphu</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>th</language>
-        <lastBuildDate>Sun, 25 May 2025 21:25:45 +0700</lastBuildDate><atom:link href="http://localhost:1313/categories/general/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 25 May 2025 21:25:45 +0700</lastBuildDate><atom:link href="http://192.168.1.7:1313/categories/general/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>จิตกับธรรมชาติ เชื่อมโยงกันอย่างไร?</title>
-        <link>http://localhost:1313/post/mind-and-nature/</link>
+        <link>http://192.168.1.7:1313/post/mind-and-nature/</link>
         <pubDate>Sun, 25 May 2025 21:25:45 +0700</pubDate>
         
-        <guid>http://localhost:1313/post/mind-and-nature/</guid>
-        <description>&lt;img src="http://localhost:1313/post/mind-and-nature/people-stand.webp" alt="Featured image of post จิตกับธรรมชาติ เชื่อมโยงกันอย่างไร?" /&gt;&lt;h1 id=&#34;จตกบธรรมชาต-เชอมโยงกนอยางไร&#34;&gt;จิตกับธรรมชาติ เชื่อมโยงกันอย่างไร?
+        <guid>http://192.168.1.7:1313/post/mind-and-nature/</guid>
+        <description>&lt;img src="http://192.168.1.7:1313/post/mind-and-nature/people-stand.webp" alt="Featured image of post จิตกับธรรมชาติ เชื่อมโยงกันอย่างไร?" /&gt;&lt;h1 id=&#34;จตกบธรรมชาต-เชอมโยงกนอยางไร&#34;&gt;จิตกับธรรมชาติ เชื่อมโยงกันอย่างไร?
 &lt;/h1&gt;&lt;p&gt;ความสัมพันธ์ระหว่างจิตใจมนุษย์กับธรรมชาติเป็นเรื่องที่น่าสนใจมาตั้งแต่อดีต นักปรัชญา กวี และนักวิทยาศาสตร์ต่างก็พยายามทำความเข้าใจความเชื่อมโยงอันลึกซึ้งนี้&lt;/p&gt;
 &lt;h2 id=&#34;การสะทอนอารมณผานธรรมชาต&#34;&gt;การสะท้อนอารมณ์ผ่านธรรมชาติ
 &lt;/h2&gt;&lt;p&gt;มนุษย์มักใช้ธรรมชาติเป็นตัวแทนของอารมณ์ ความรู้สึก หรือเหตุการณ์ในชีวิต:&lt;/p&gt;
@@ -62,11 +62,11 @@
         </item>
         <item>
         <title>Hello World</title>
-        <link>http://localhost:1313/post/hello-world/</link>
+        <link>http://192.168.1.7:1313/post/hello-world/</link>
         <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/post/hello-world/</guid>
-        <description>&lt;img src="http://localhost:1313/post/hello-world/helloworld.jpg" alt="Featured image of post Hello World" /&gt;&lt;p&gt;ยินดีต้อนรับสู่ Hugo theme Stack นี่คือโพสต์แรกของคุณ แก้ไขหรือลบมัน แล้วเริ่มเขียนได้เลย!&lt;/p&gt;
+        <guid>http://192.168.1.7:1313/post/hello-world/</guid>
+        <description>&lt;img src="http://192.168.1.7:1313/post/hello-world/helloworld.jpg" alt="Featured image of post Hello World" /&gt;&lt;p&gt;ยินดีต้อนรับสู่ Hugo theme Stack นี่คือโพสต์แรกของคุณ แก้ไขหรือลบมัน แล้วเริ่มเขียนได้เลย!&lt;/p&gt;
 &lt;p&gt;สำหรับข้อมูลเพิ่มเติมเกี่ยวกับธีมนี้ สามารถดูได้ที่เอกสาร: &lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://stack.jimmycai.com/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Want a site like this? Check out &lt;a class=&#34;link&#34; href=&#34;https://github.com/CaiJimmy/hugo-theme-stack-starter&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
