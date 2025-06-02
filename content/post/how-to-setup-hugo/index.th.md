@@ -9,7 +9,14 @@ tags:
     - Web Development
     - Static Site Generator
     - Blog
-image: hugo-web-framework.png
+image: hugo-web-framework-800.webp
+resources:
+- src: hugo-web-framework-800.webp
+  params:
+    alt: ภาพแสดง Hugo Web Framework
+    srcset:
+      - hugo-web-framework-400.webp 400w
+      - hugo-web-framework-800.webp 800w
 ---
 
 # วิธีติดตั้งและใช้งาน Hugo แบบง่ายๆ

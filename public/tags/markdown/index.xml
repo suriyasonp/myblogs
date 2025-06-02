@@ -12,7 +12,7 @@
         <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/post/markdown-syntax/</guid>
-        <description>&lt;img src="http://localhost:1313/post/markdown-syntax/markdown-image.png" alt="Featured image of post คู่มือการใช้งาน Markdown" /&gt;&lt;p&gt;คู่มือนี้จะแสดงวิธีการใช้งาน Markdown สำหรับการเขียนบล็อกใน Hugo โดยแต่ละส่วนจะมีทั้งโค้ด Markdown และตัวอย่างผลลัพธ์ที่ได้&lt;/p&gt;
+        <description>&lt;img src="http://localhost:1313/post/markdown-syntax/markdown-image-800.webp" alt="Featured image of post คู่มือการใช้งาน Markdown" /&gt;&lt;p&gt;คู่มือนี้จะแสดงวิธีการใช้งาน Markdown สำหรับการเขียนบล็อกใน Hugo โดยแต่ละส่วนจะมีทั้งโค้ด Markdown และตัวอย่างผลลัพธ์ที่ได้&lt;/p&gt;
 &lt;h2 id=&#34;ไวยากรณพนฐาน&#34;&gt;ไวยากรณ์พื้นฐาน
 &lt;/h2&gt;&lt;h3 id=&#34;หวขอ&#34;&gt;หัวข้อ
 &lt;/h3&gt;&lt;p&gt;ใน Markdown เราสร้างหัวข้อโดยใช้สัญลักษณ์ &lt;code&gt;#&lt;/code&gt; จำนวนของ &lt;code&gt;#&lt;/code&gt; จะกำหนดระดับของหัวข้อ:&lt;/p&gt;
