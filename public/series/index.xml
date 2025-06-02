@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Series on TECHFOR by Suriya Sonphu</title>
-        <link>https://suriyasonphu.com/series/</link>
+        <link>http://localhost:1313/series/</link>
         <description>Recent content in Series on TECHFOR by Suriya Sonphu</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>th</language><atom:link href="https://suriyasonphu.com/series/index.xml" rel="self" type="application/rss+xml" />
+        <language>th</language><atom:link href="http://localhost:1313/series/index.xml" rel="self" type="application/rss+xml" />
     </channel>
 </rss>
