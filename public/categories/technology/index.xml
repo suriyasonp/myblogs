@@ -12,7 +12,7 @@
         <pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/post/2025-05-the-human-alrotithm/</guid>
-        <description>&lt;img src="http://localhost:1313/post/2025-05-the-human-alrotithm/brain-ai.png" alt="Featured image of post The Human Algorithm" /&gt;&lt;h1 id=&#34;the-human-algorithm&#34;&gt;The Human Algorithm
+        <description>&lt;img src="http://localhost:1313/post/2025-05-the-human-alrotithm/brain-ai-800.webp" alt="Featured image of post The Human Algorithm" /&gt;&lt;h1 id=&#34;the-human-algorithm&#34;&gt;The Human Algorithm
 &lt;/h1&gt;&lt;h1 id=&#34;อลกอรทมแหงมนษยชาต&#34;&gt;อัลกอริทึมแห่งมนุษยชาติ
 &lt;/h1&gt;&lt;h2 id=&#34;บทนำ-จดเรมตนของการเดนทาง&#34;&gt;บทนำ: จุดเริ่มต้นของการเดินทาง
 &lt;/h2&gt;&lt;p&gt;ในยุคที่เทคโนโลยีปัญญาประดิษฐ์กำลังเปลี่ยนแปลงโลกของเราอย่างรวดเร็ว เราต้องหยุดและตั้งคำถามกับตัวเอง: เราคือใคร? AI คืออะไร? และเราจะเดินไปข้างหน้าร่วมกันได้อย่างไร?&lt;/p&gt;
@@ -54,10 +54,10 @@
 &lt;li&gt;&lt;strong&gt;ความสม่ำเสมอ&lt;/strong&gt;: AI ไม่เหนื่อย ไม่หิว ไม่มีอารมณ์ผันแปร&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;ความเป็นกลาง&lt;/strong&gt;: AI ไม่มีอคติ (ถ้าข้อมูลที่ใช้ฝึกไม่มีอคติ)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/2025-05-the-human-alrotithm/human-brain-2.jpg&#34;
-	width=&#34;4928&#34;
-	height=&#34;3264&#34;
-	srcset=&#34;http://localhost:1313/post/2025-05-the-human-alrotithm/human-brain-2_hu_2b8f5d1be25b4c7f.jpg 480w, http://localhost:1313/post/2025-05-the-human-alrotithm/human-brain-2_hu_23c2b2c6c347b0d6.jpg 1024w&#34;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/post/2025-05-the-human-alrotithm/human-brain-800.webp&#34;
+	width=&#34;800&#34;
+	height=&#34;530&#34;
+	srcset=&#34;http://localhost:1313/post/2025-05-the-human-alrotithm/human-brain-800_hu_58aac2e4b0b42326.webp 480w, http://localhost:1313/post/2025-05-the-human-alrotithm/human-brain-800_hu_9f8227311ecaccf2.webp 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;Human Brain&#34;
@@ -153,7 +153,7 @@
         <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/post/how-to-setup-hugo/</guid>
-        <description>&lt;img src="http://localhost:1313/post/how-to-setup-hugo/hugo-web-framework.png" alt="Featured image of post วิธีติดตั้งและใช้งาน Hugo แบบง่ายๆ" /&gt;&lt;h1 id=&#34;วธตดตงและใชงาน-hugo-แบบงายๆ&#34;&gt;วิธีติดตั้งและใช้งาน Hugo แบบง่ายๆ
+        <description>&lt;img src="http://localhost:1313/post/how-to-setup-hugo/hugo-web-framework-800.webp" alt="Featured image of post วิธีติดตั้งและใช้งาน Hugo แบบง่ายๆ" /&gt;&lt;h1 id=&#34;วธตดตงและใชงาน-hugo-แบบงายๆ&#34;&gt;วิธีติดตั้งและใช้งาน Hugo แบบง่ายๆ
 &lt;/h1&gt;&lt;p&gt;Hugo เป็น Static Site Generator ที่มีประสิทธิภาพสูง รวดเร็ว และใช้งานง่าย เหมาะสำหรับการสร้างเว็บบล็อก หรือเว็บไซต์ส่วนตัว ในบทความนี้เราจะมาเรียนรู้วิธีการติดตั้งและใช้งาน Hugo พร้อมกับธีม Stack ที่มีดีไซน์สวยงาม&lt;/p&gt;
 &lt;h2 id=&#34;ขอดของ-hugo&#34;&gt;ข้อดีของ Hugo
 &lt;/h2&gt;&lt;ul&gt;
@@ -368,7 +368,7 @@
         <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/post/markdown-syntax/</guid>
-        <description>&lt;img src="http://localhost:1313/post/markdown-syntax/markdown-image.png" alt="Featured image of post คู่มือการใช้งาน Markdown" /&gt;&lt;p&gt;คู่มือนี้จะแสดงวิธีการใช้งาน Markdown สำหรับการเขียนบล็อกใน Hugo โดยแต่ละส่วนจะมีทั้งโค้ด Markdown และตัวอย่างผลลัพธ์ที่ได้&lt;/p&gt;
+        <description>&lt;img src="http://localhost:1313/post/markdown-syntax/markdown-image-800.webp" alt="Featured image of post คู่มือการใช้งาน Markdown" /&gt;&lt;p&gt;คู่มือนี้จะแสดงวิธีการใช้งาน Markdown สำหรับการเขียนบล็อกใน Hugo โดยแต่ละส่วนจะมีทั้งโค้ด Markdown และตัวอย่างผลลัพธ์ที่ได้&lt;/p&gt;
 &lt;h2 id=&#34;ไวยากรณพนฐาน&#34;&gt;ไวยากรณ์พื้นฐาน
 &lt;/h2&gt;&lt;h3 id=&#34;หวขอ&#34;&gt;หัวข้อ
 &lt;/h3&gt;&lt;p&gt;ใน Markdown เราสร้างหัวข้อโดยใช้สัญลักษณ์ &lt;code&gt;#&lt;/code&gt; จำนวนของ &lt;code&gt;#&lt;/code&gt; จะกำหนดระดับของหัวข้อ:&lt;/p&gt;

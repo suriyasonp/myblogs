@@ -9,7 +9,14 @@ tags:
     - tutorial
 categories:
     - technology
-image: markdown-image.png
+image: markdown-image-800.webp
+resources:
+- src: markdown-image-800.webp
+  params:
+    alt: Markdown syntax example
+    srcset:
+      - markdown-image-400.webp 400w
+      - markdown-image-800.webp 800w
 ---
 
 This guide demonstrates the Markdown syntax you can use in Hugo blog posts. Each section includes both the Markdown code and its rendered output.

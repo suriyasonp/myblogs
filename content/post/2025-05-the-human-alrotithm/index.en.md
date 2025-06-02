@@ -13,7 +13,20 @@ tags:
     - Machine Learning
     - AGI
 author: Suriya Sonphu, Co-wrote with Claude AI Sonnet 4
-image: brain-ai.png
+image: brain-ai-800.webp
+resources:
+- src: brain-ai-800.webp
+  params:
+    alt: Brain and AI concept illustration
+    srcset:
+      - brain-ai-400.webp 400w
+      - brain-ai-800.webp 800w
+- src: human-brain-800.webp
+  params:
+    alt: Human brain illustration
+    srcset:
+      - human-brain-400.webp 400w
+      - human-brain-800.webp 800w
 ---
 
 # The Human Algorithm

@@ -10,7 +10,14 @@ tags:
 categories:
     - general
 author: Suriya Sonphu
-image: people-stand.webp
+image: people-stand-800.webp
+resources:
+- src: people-stand-800.webp
+  params:
+    alt: คนยืนอยู่ในธรรมชาติ
+    srcset:
+      - people-stand-400.webp 400w
+      - people-stand-800.webp 800w
 ---
 
 # จิตกับธรรมชาติ เชื่อมโยงกันอย่างไร?

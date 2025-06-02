@@ -9,7 +9,14 @@ tags:
     - tutorial
 categories:
     - technology
-image: markdown-image.png
+image: markdown-image-800.webp
+resources:
+- src: markdown-image-800.webp
+  params:
+    alt: ตัวอย่างการใช้งาน Markdown
+    srcset:
+      - markdown-image-400.webp 400w
+      - markdown-image-800.webp 800w
 ---
 
 คู่มือนี้จะแสดงวิธีการใช้งาน Markdown สำหรับการเขียนบล็อกใน Hugo โดยแต่ละส่วนจะมีทั้งโค้ด Markdown และตัวอย่างผลลัพธ์ที่ได้
