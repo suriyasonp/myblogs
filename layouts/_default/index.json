@@ -1,0 +1,23 @@
+{
+    "version" : "https://jsonfeed.org/version/1",
+    "title" : "{{ .Site.Title }}",
+    "home_page_url" : "{{ .Site.BaseURL }}",
+    "feed_url" : "{{ .Site.BaseURL }}index.json",
+    "items" : [
+    {{- $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections -}}
+    {{- $notHidden := where .Site.RegularPages "Params.hidden" "!=" true -}}
+    {{- $filtered := ($pages | intersect $notHidden) -}}
+    {{- range $index, $element := $filtered -}}
+    {
+        "id": "{{ .Permalink }}",
+        "url": "{{ .Permalink }}",
+        "title": {{ .Title | jsonify }},
+        "date_published": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+        "content_html": {{ .Content | jsonify }},
+        "summary": {{ .Summary | jsonify }},
+        "tags": [{{ range $tindex, $tag := .Params.tags }}{{ if $tindex }}, {{ end }}"{{ $tag }}"{{ end }}],
+        "categories": [{{ range $cindex, $category := .Params.categories }}{{ if $cindex }}, {{ end }}"{{ $category }}"{{ end }}]
+    }{{ if ne (add $index 1) (len $filtered) }},{{ end }}
+    {{- end -}}
+    ]
+} 

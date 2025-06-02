@@ -14,12 +14,57 @@ enableRobotsTXT = true
     title = "TECHFOR by Suriya Sonphu" # Thai title
     [languages.th.params]
       description = "บล็อกส่วนตัว แบ่งปันความรู้เกี่ยวกับเทคโนโลยีและชีวิตประจำวัน" # Thai description
+    [languages.th.menu]
+      [[languages.th.menu.main]]
+        identifier = "home"
+        name = "หน้าแรก"
+        url = "/"
+        weight = 10
+        [languages.th.menu.main.params]
+          icon = "home"
+      [[languages.th.menu.main]]
+        identifier = "posts"
+        name = "บทความ"
+        url = "/post/"
+        weight = 20
+        [languages.th.menu.main.params]
+          icon = "archives"
+      [[languages.th.menu.main]]
+        identifier = "categories"
+        name = "หมวดหมู่"
+        url = "/categories/"
+        weight = 30 
+        [languages.th.menu.main.params]
+          icon = "categories"
+
   [languages.en]
     languageName = "English"
     weight = 2
     title = "TECHFOR by Suriya Sonphu" # English title (can be same or different)
     [languages.en.params]
       description = "My personal blog. Knowledge sharing blog about technology and life." # English description
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "home"
+        name = "Home"
+        url = "/"
+        weight = 10
+        [languages.en.menu.main.params]
+          icon = "home"
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        name = "Posts"
+        url = "/post/"
+        weight = 20
+        [languages.en.menu.main.params]
+          icon = "archives"
+      [[languages.en.menu.main]]
+        identifier = "categories"
+        name = "Categories"
+        url = "/categories/"
+        weight = 30 
+        [languages.en.menu.main.params]
+          icon = "categories"
 
 # Taxonomy configuration
 [taxonomies]
@@ -27,30 +72,7 @@ enableRobotsTXT = true
   tag = "tags"
   series = "series"
 
-# Menu configuration
-[menu]
-  [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 10
-    [menu.main.params]
-      icon = "home"
-  [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/post/"
-    weight = 20
-    [menu.main.params]
-      icon = "archives"
-  [[menu.main]]
-    identifier = "categories"
-    name = "Categories"
-    url = "/categories/"
-    weight = 30 
-    [menu.main.params]
-      icon = "categories"
-    
+# Remove the old menu configuration since it's now in the language-specific sections
 # Pagination settings
 paginate = 5
 
@@ -58,7 +80,7 @@ paginate = 5
 [params]
   mainSections = ["post", "posts"]
   description = "My personal blog. Knowledge sharing blog about technology and life."
-  favicon = "favicon.ico"
+  favicon = "/assets/favicon/favicon.ico"
   keywords = ["สุริยา สนภู่", "suriyasonphu", "Suriya Sonphu", "blog", "technology", "programming", "dailylife", "reading", "software", "tutorials", "reviews"]
   canonicalURL = "https://suriyasonphu.com/"
   # Social preview image for sharing

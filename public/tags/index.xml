@@ -79,19 +79,11 @@
         <description></description>
         </item>
         <item>
-        <title>Css</title>
-        <link>http://localhost:1313/tags/css/</link>
+        <title>Blogging</title>
+        <link>http://localhost:1313/tags/blogging/</link>
         <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/tags/css/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Html</title>
-        <link>http://localhost:1313/tags/html/</link>
-        <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/tags/html/</guid>
+        <guid>http://localhost:1313/tags/blogging/</guid>
         <description></description>
         </item>
         <item>
@@ -103,11 +95,19 @@
         <description></description>
         </item>
         <item>
-        <title>Themes</title>
-        <link>http://localhost:1313/tags/themes/</link>
+        <title>Tutorial</title>
+        <link>http://localhost:1313/tags/tutorial/</link>
         <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/tags/themes/</guid>
+        <guid>http://localhost:1313/tags/tutorial/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Writing</title>
+        <link>http://localhost:1313/tags/writing/</link>
+        <pubDate>Wed, 28 May 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/writing/</guid>
         <description></description>
         </item>
         <item>
@@ -140,30 +140,6 @@
         <pubDate>Sun, 25 May 2025 21:25:45 +0700</pubDate>
         
         <guid>http://localhost:1313/tags/psychology/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>General</title>
-        <link>http://localhost:1313/tags/general/</link>
-        <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/tags/general/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Hello-World</title>
-        <link>http://localhost:1313/tags/hello-world/</link>
-        <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/tags/hello-world/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Stay-Reading</title>
-        <link>http://localhost:1313/tags/stay-reading/</link>
-        <pubDate>Sat, 24 May 2025 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/tags/stay-reading/</guid>
         <description></description>
         </item>
         
