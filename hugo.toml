@@ -5,6 +5,7 @@ title = 'TECHFOR by Suriya Sonphu'
 theme = 'hugo-theme-stack'
 
 enableRobotsTXT = true
+enableEmoji = true
 
 # Language settings
 [languages]
