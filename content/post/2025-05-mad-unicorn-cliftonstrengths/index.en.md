@@ -8,7 +8,7 @@ categories:
 tags:
     - Mad Unicorn
     - CliftonStrengths
-    - tech startup
+    - Tech Startup
     - Thai Startup
 
 author: Suriya Sonphu
