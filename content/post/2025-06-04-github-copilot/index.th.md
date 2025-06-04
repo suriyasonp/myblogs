@@ -8,6 +8,9 @@ categories:
 tags:
     - programming
     - tools
+    - github
+    - AI
+    - github-copilot
 
 author: สุริยา สนภู่
 image: github-copilot.png
