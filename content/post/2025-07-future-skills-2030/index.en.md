@@ -31,29 +31,78 @@ The world of work is rapidly evolving, and the **Future of Jobs Report 2025** fr
 - Continuous need for learning new skills
 - Adaptation requirements for education and training systems
 
-## 🎯 Essential Skills for the Future
+## 🎯 Core Skills Required by 2025
 
-### 1. **Digital Skills**
-- **Programming** and software development
-- **Data analytics** and machine learning
-- **AI literacy** and effective use of AI tools
-- **Cybersecurity** and data protection
+According to the World Economic Forum's Future of Jobs Report 2025, here are the essential skills that professionals need to develop immediately:
 
-### 2. **Green Skills**
-- Knowledge of **renewable energy** and clean technology
-- **Sustainable product** design and development
-- **Carbon footprint management** and environmental impact assessment
+![Core Skills in 2025](https://reports.weforum.org/docs/WEF_FOJ25_Core_Skills_in_2025.png)
 
-### 3. **Healthcare and Social Skills**
-- **Telemedicine** and digital healthcare
-- Working with **elderly populations** and long-term care
-- **Mental health support** and counseling services
+### Top 10 Core Skills for 2025:
+1. **Analytical Thinking** - The ability to break down complex problems
+2. **Creative Thinking** - Innovation and generating new solutions
+3. **AI and Big Data** - Understanding and leveraging artificial intelligence
+4. **Technological Literacy** - Proficiency with emerging technologies
+5. **Curiosity and Lifelong Learning** - Continuous skill development mindset
+6. **Resilience, Flexibility and Agility** - Adaptability to change
+7. **Systems Thinking** - Understanding interconnected processes
+8. **Motivation and Self-Awareness** - Personal drive and emotional intelligence
+9. **Talent Management** - Leading and developing others
+10. **Service Orientation** - Focus on customer and stakeholder needs
 
-### 4. **Future Skills**
-- **Critical thinking** and complex problem-solving
-- **Creativity and innovation** in creating new solutions
-- **Emotional intelligence** and working with diverse teams
-- **Adaptability** and continuous learning mindset
+## 🚀 Core Skills That Will Dominate by 2030
+
+Looking ahead to 2030, the skill requirements will evolve further:
+
+![Core Skills in 2030](https://reports.weforum.org/docs/WEF_FOJ25_shareable_Core_Skills_in_2030.png)
+
+### Essential Skills for 2030:
+- **Creative Thinking** will become the #1 most important skill
+- **Analytical Thinking** remains critically important
+- **Technological Literacy** expands to include advanced AI collaboration
+- **Curiosity and Lifelong Learning** becomes even more vital
+- **Resilience, Flexibility and Agility** essential for rapid change adaptation
+- **Systems Thinking** for complex problem-solving
+- **AI and Big Data** skills become foundational requirements
+- **Motivation and Self-Awareness** for personal effectiveness
+- **Empathy and Active Listening** for human-centric leadership
+- **Quality Control** for ensuring excellence in digital environments
+
+## 🛤️ Your Personal Skill Development Roadmap
+
+### Phase 1: Immediate Actions (2025)
+**Focus on building foundation skills:**
+- **Start with Analytical Thinking**: Practice breaking down complex problems daily
+- **Develop Creative Thinking**: Engage in brainstorming, design thinking workshops
+- **Build AI Literacy**: Learn to effectively use AI tools like ChatGPT, GitHub Copilot
+- **Enhance Technological Literacy**: Stay updated with emerging tech trends
+
+### Phase 2: Advanced Development (2025-2027)
+**Deepen your expertise:**
+- **Master AI and Big Data**: Take courses in machine learning, data analysis
+- **Cultivate Systems Thinking**: Practice seeing the bigger picture in your projects
+- **Develop Leadership Skills**: Focus on talent management and team development
+- **Build Resilience**: Practice adaptability through challenging projects
+
+### Phase 3: Future-Ready Skills (2027-2030)
+**Prepare for the evolved workplace:**
+- **Advanced Creative Thinking**: Lead innovation initiatives in your organization
+- **Human-AI Collaboration**: Become expert at working alongside AI systems
+- **Empathy and Active Listening**: Develop deep emotional intelligence
+- **Quality Control in Digital Environment**: Master digital quality assurance
+
+### Monthly Development Plan:
+**Week 1-2: Foundation Building**
+- Dedicate 30 minutes daily to analytical thinking exercises
+- Try new AI tools and document learnings
+
+**Week 3-4: Creative Development**
+- Join creative thinking workshops or online courses
+- Start a personal innovation project
+
+**Monthly Review:**
+- Assess skill development progress
+- Identify gaps and adjust learning plan
+- Connect with mentors or communities in target skill areas
 
 ## 🚀 Preparation Strategies for 2030
 
