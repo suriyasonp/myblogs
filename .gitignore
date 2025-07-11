@@ -8,6 +8,9 @@ Thumbs.db
 
 # Hugo build lock
 .hugo_build.lock
+# Hugo binary (extracted from tar.gz)
+hugo
+hugo.exe
 
 # Node/npm/yarn (if used)
 /node_modules/
