@@ -13,6 +13,7 @@ enableEmoji = true
     languageName = "ไทย"
     weight = 1
     title = "TECHFOR by Suriya Sonphu" # Thai title
+    contentDir = "content"
     [languages.th.params]
       description = "บล็อกส่วนตัว แบ่งปันความรู้เกี่ยวกับเทคโนโลยีและชีวิตประจำวัน" # Thai description
     [languages.th.menu]
@@ -42,6 +43,7 @@ enableEmoji = true
     languageName = "English"
     weight = 2
     title = "TECHFOR by Suriya Sonphu" # English title (can be same or different)
+    contentDir = "content"
     [languages.en.params]
       description = "My personal blog. Knowledge sharing blog about technology and life." # English description
     [languages.en.menu]
