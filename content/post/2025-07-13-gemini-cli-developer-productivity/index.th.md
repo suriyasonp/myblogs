@@ -191,10 +191,9 @@ Gemini CLI ไม่ใช่เครื่องมือที่จะมา
 ## แหล่งอ้างอิง
 
 1. [Google AI Gemini API Documentation](https://ai.google.dev/gemini-api/docs) - Google AI for Developers
-2. [Gemini CLI Installation Guide](https://ai.google.dev/gemini-api/docs/downloads/rest) - Google AI Documentation
+2. [Gemini CLI](https://blog.google/technology/developers/introducing-gemini-cli-open-source-ai-agent/) - Gemini CLI
 3. [Google Cloud Generative AI Pricing](https://cloud.google.com/vertex-ai/generative-ai/pricing) - Google Cloud Platform
-4. [GitHub Copilot vs Competitors Analysis](https://docs.github.com/en/copilot) - GitHub Documentation
-5. [Generative AI CLI Tools Comparison](https://cloud.google.com/blog/topics/developers-practitioners/ai-development-tools) - Google Cloud Blog
-6. [Command Line AI Tools for Developers](https://developers.google.com/learn/topics/ai) - Google for Developers
+4. [GitHub Copilot](https://docs.github.com/en/copilot) - GitHub Documentation
+5. [Gemini CLI Github](https://github.com/google-gemini/gemini-cli) - Gemini CLI Guide
 
 ---
