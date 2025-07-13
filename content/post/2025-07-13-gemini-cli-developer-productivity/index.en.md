@@ -42,7 +42,7 @@ Gemini CLI is designed as a tool to make developers' work more efficient by enab
 - Process data in various formats
 - Handle large files efficiently
 
-![Gemini CLI Terminal Interface](https://developers.google.com/static/gemini-api/docs/images/gemini-cli-overview.png)
+![Gemini CLI Terminal Interface](gemini-screenshot.png)
 
 ## Open Source Concept in Free Tier: Capabilities, Limitations, and Professional Usage
 
