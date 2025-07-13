@@ -42,7 +42,7 @@ Gemini CLI เป็นเครื่องมือ command-line interface ท
 - ประมวลผลข้อมูลในรูปแบบต่างๆ
 - สามารถทำงานกับไฟล์ขนาดใหญ่ได้
 
-![Gemini CLI Terminal Interface](https://developers.google.com/static/gemini-api/docs/images/gemini-cli-overview.png)
+![Gemini CLI Terminal Interface](gemini-screenshot.png)
 
 ## มีแนวคิดเป็น Open source ใน Free Tier ทำอะไรได้บ้าง มีข้อจำกัดอะไรบ้าง และถ้าจะใช้งานระดับมืออาชีพจะต้องทำอย่างไร
 
