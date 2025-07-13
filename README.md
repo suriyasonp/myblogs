@@ -1,4 +1,6 @@
-# MyBlogs
+# TECHFOR by Suriya Sonphu
+## Knowledge sharing blog about technology and life 
+[![Deploy TECHFOR site to Pages](https://github.com/suriyasonp/myblogs/actions/workflows/gh-pages.yml/badge.svg?branch=main)](https://github.com/suriyasonp/myblogs/actions/workflows/gh-pages.yml)
 
 This is a personal blog project built with [Hugo](https://gohugo.io/), using the Hugo Stack theme. It features posts, categories, tags, and custom layouts for sharing articles and resources.
 
