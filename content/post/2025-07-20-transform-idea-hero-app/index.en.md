@@ -24,11 +24,9 @@ This process emphasizes rapid iteration and validation, aligning with Lean Start
 
 ## Key Concepts
 
-**Rapid Prototyping with AI:** Utilize AI tools to quickly generate functional prototypes from ideas.
-
-**Iterative Development:** Continuously refine the prototype based on feedback.
-
-**Validation:** Test the core idea and user experience early in the development cycle.
+- **Rapid Prototyping with AI:** Utilize AI tools to quickly generate functional prototypes from ideas.
+- **Iterative Development:** Continuously refine the prototype based on feedback.
+- **Validation:** Test the core idea and user experience early in the development cycle.
 
 ## Example: AI Prototyping with Figma Make
 
@@ -50,25 +48,20 @@ Simple & Smooth: The user interface should be easy to navigate, with a modern fe
 
 **Features**
 
-**Make Tasks:** You can quickly add new things you need to do.
-
-**Add Pictures:** For each task, you can attach a picture, maybe like a photo of something you need to buy or a project you're working on.
-
-**Add Locations:** You can also jot down a location for a task, like "grocery store" or "office."
-
-**Check Things Off:** A simple way to mark tasks as done.
-
-**Your Lists on the Left:** On the left side of the screen, you'll see all your different to-do lists (like "Work," "Home," "Shopping," etc.). When you click one, it shows just those tasks.
-
-**Notes on the Right:** When you pick a task, the right side of the screen shows all its details and lets you type notes about it."
+- **Make Tasks:** You can quickly add new things you need to do.
+- **Add Pictures:** For each task, you can attach a picture, maybe like a photo of something you need to buy or a project you're working on.
+- **Add Locations:** You can also jot down a location for a task, like "grocery store" or "office."
+- **Check Things Off:** A simple way to mark tasks as done.
+- **Your Lists on the Left:** On the left side of the screen, you'll see all your different to-do lists (like - "Work," "Home," "Shopping," etc.). When you click one, it shows just those tasks.
+- **Notes on the Right:** When you pick a task, the right side of the screen shows all its details and lets you type notes about it.
 
 ### Results
 
-![Prototype](https://github.com/user-attachments/assets/0f970cc6-26d7-4535-a114-809abf6decf4)
+![Prototype](00-code-gen.png)
 
-![Add New Task Popup](https://github.com/user-attachments/assets/f5bbc6fb-30f8-44bc-aa30-e52d3f169225)
+![Add New Task Popup](01-add-task.png)
 
-![Task can be added](https://github.com/user-attachments/assets/37a13874-012c-4362-be09-cf24c08aeba3)
+![Task can be added](02-prototype.png)
 
 This process demonstrates how a functional prototype can be generated in approximately 3 minutes, a task that historically might have taken a week. AI significantly assists in rapidly validating and refining ideas.
 
@@ -108,7 +101,7 @@ The future of software development lies in leveraging AI to accelerate the journ
 
 The key is not to replace human creativity and problem-solving, but to amplify it through intelligent automation. By embracing these AI-powered tools, developers can transform from coders to rapid solution architects.
 
-For more insights, follow my personal blog at: [https://suriyasonphu.com](https://suriyasonphu.com)
+![Infographic](infographic.png)
 
 ## References
 
