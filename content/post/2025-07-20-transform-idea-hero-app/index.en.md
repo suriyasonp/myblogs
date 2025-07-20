@@ -15,7 +15,7 @@ tags:
     - agile
     - mvp
 author: Suriya Sonphu
-image: cover.png
+image: post-cover.png
 ---
 
 As software engineers, we often have great app ideas but face the challenge of proving them quickly. Traditional coding from scratch can be time-consuming. This issue explores how leveraging AI for prototyping can significantly accelerate the process of transforming a concept into a "Hero App."
