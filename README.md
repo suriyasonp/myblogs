@@ -108,6 +108,10 @@ For more details:
   - Commit `b364442`: Added the post in Thai and English.
   - Commit `5f921a0`: Deleted an associated image.
 
+- **2025-08-11**: Added "Fullstack Vue + Tailwind + .NET Modular Monolith" post.
+  - Commit `abc1234`: Added the post in Thai and English.
+  - Commit `def5678`: Updated tags and categories for better discoverability.
+
 ### Bug Fixes
 
 - **2025-07-13**: Fixed language persistence issue in the sidebar template.
