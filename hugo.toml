@@ -15,7 +15,7 @@ enableEmoji = true
     title = "TECHFOR by Suriya Sonphu" # Thai title
     contentDir = "content"
     [languages.th.params]
-      description = "บล็อกส่วนตัว แบ่งปันความรู้เกี่ยวกับเทคโนโลยีและชีวิตประจำวัน" # Thai description
+      description = "บล็อกส่วนตัว แบ่งปันความรู้เกี่ยวกับเทคโนโลยี การพัฒนาต้นเอง และชีวิตประจำวัน" # Thai description
     [languages.th.menu]
       [[languages.th.menu.main]]
         identifier = "home"
@@ -45,7 +45,7 @@ enableEmoji = true
     title = "TECHFOR by Suriya Sonphu" # English title (can be same or different)
     contentDir = "content"
     [languages.en.params]
-      description = "My personal blog. Knowledge sharing blog about technology and life." # English description
+      description = "My personal blog. Knowledge sharing blog about technology, self-development, and life." # English description
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "home"
@@ -82,7 +82,7 @@ paginate = 5
 # The Stack theme configuration
 [params]
   mainSections = ["post", "posts"]
-  description = "My personal blog. Knowledge sharing blog about technology and life."
+  description = "My personal blog. Knowledge sharing blog about technology, self-development, and life."
   favicon = "/assets/favicon/favicon.ico"
   keywords = ["สุริยา สนภู่", "suriyasonphu", "Suriya Sonphu", "blog", "technology", "programming", "dailylife", "reading", "software", "tutorials", "reviews"]
   canonicalURL = "https://suriyasonphu.com/"
@@ -102,7 +102,7 @@ paginate = 5
   
   [params.sidebar]
      emoji = "🧠"
-    subtitle = "Knowledge sharing blog about technology and life"
+    subtitle = "Knowledge sharing blog about technology, self-development, and life"
 
   [params.footer]
     since = 2025
