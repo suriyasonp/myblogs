@@ -4,10 +4,7 @@ date: 2025-11-25
 draft: false
 description: "สำรวจว่าเหตุใดทักษะความสามารถ (Hard Skills) จึงเป็นเพียงจุดเริ่มต้น และทำไมการสร้างความสัมพันธ์ที่ดี (Soft Skills & Relationships) จึงเป็นกุญแจสำคัญสู่ความสำเร็จในระยะยาวและการเติบโตอย่างยั่งยืนในโลกการทำงาน"
 categories:
-    - career-development
-    - soft-skills
-    - teamwork
-    - leadership
+    - General
 tags:
     - career-growth
     - relationships
