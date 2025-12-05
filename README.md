@@ -80,7 +80,6 @@ For more details:
 
 ### Post Additions
 - **2025-12-07**: Added "Our Learning Path is Not Linear: Understanding the Learning Journey" post.
-- **2025-12-06**: Add "Our Learning Path is Not Linear: Understanding the Learning Journey" post.
 - **2025-12-05**: Added "Fail Fast: When 'Failure' is the Cheapest Cost of Building a Great Product" post.
 - **2025-11-26**: Added "Skill Opens Doors, Relationships Carry You Far: Building Sustainable Success Together" post.
 - **2025-11-23**: Added "Great Ideas Start with Your Customers" post.

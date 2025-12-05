@@ -1,0 +1,36 @@
+{{- if and .IsPage (eq .Type "post") -}}
+{{- $image := .Resources.GetMatch .Params.image -}}
+{{- $imageURL := "" -}}
+{{- if $image -}}
+    {{- $imageURL = $image.AbsoluteURL -}}
+{{- end -}}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ .Permalink }}"
+    },
+    "headline": "{{ .Title }}",
+    "description": "{{ .Description }}",
+    {{- if $imageURL -}}
+    "image": "{{ $imageURL }}",
+    {{- end -}}
+    "author": {
+        "@type": "Person",
+        "name": "{{ .Params.author | default .Site.Author.name }}"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "{{ .Site.Title }}",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ .Site.Params.logo.url | absURL }}"
+        }
+    },
+    "datePublished": "{{ .Date.Format "2025-05-31T00:08:08Z07:00" }}",
+    "dateModified": "{{ .Lastmod.Format "2025-12-05T15:04:05Z07:00" }}"
+}
+</script>
+{{- end -}}
