@@ -1,6 +1,6 @@
 ---
 title: "You can get success if you avoid cheap dopamine"
-date: 2025-12-06
+date: 2025-12-05
 draft: false
 slug: "cheap-dopamine-success"
 author: "Suriya Sonphu"
@@ -52,7 +52,9 @@ When you detach from cheap dopamine, you reset your brain's baseline. Boredom be
 3.  **Do Hard Things:** Intentionally schedule difficult tasks early in the day when your willpower is highest.
 4.  **Visualize Long-Term Rewards:** Keep your eyes on the prize. Remind yourself *why* you are making these sacrifices.
 
-Success isn't about luck; it's about discipline. By choosing expensive dopamine over the cheap kind, you are literally wiring your brain for success.
+![Cheap Dopamine vs Expensive Dopamine](dopamine-info-en.png)
+
+> ### Success isn't about luck; it's about discipline. By choosing expensive dopamine over the cheap kind, you are literally wiring your brain for success.
 
 ## References
 
