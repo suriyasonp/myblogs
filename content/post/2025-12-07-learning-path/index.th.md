@@ -5,7 +5,7 @@ draft: false
 slug: "learning-journey-is-not-linear"
 author: "Suriya Sonphu"
 categories:
-  - Growth Mindset"
+  - "Growth Mindset"
   - "Learning"
   - "Personal Development"
 tags:
