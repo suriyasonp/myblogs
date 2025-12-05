@@ -1,6 +1,6 @@
 ---
 title: "Our Learning Path is Not Linear: Understanding the Learning Journey"
-date: 2025-12-05
+date: 2025-12-07
 draft: false
 slug: "learning-journey-is-not-linear"
 author: "Suriya Sonphu"

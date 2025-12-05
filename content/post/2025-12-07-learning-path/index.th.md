@@ -1,6 +1,6 @@
 ---
 title: "เส้นทางการเรียนรู้ของเราไม่ได้เป็นเส้นตรง มาทำความเข้าใจเกี่ยวกับเส้นทางการเรียนรู้กัน"
-date: 2025-12-05
+date: 2025-12-07
 draft: false
 slug: "learning-journey-is-not-linear"
 author: "Suriya Sonphu"
