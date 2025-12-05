@@ -80,37 +80,20 @@ For more details:
 
 ### Post Additions
 
+- **2025-12-05**: Added "Fail Fast: When 'Failure' is the Cheapest Cost of Building a Great Product" post.
+- **2025-11-26**: Added "Skill Opens Doors, Relationships Carry You Far: Building Sustainable Success Together" post.
+- **2025-11-23**: Added "Great Ideas Start with Your Customers" post.
+- **2025-08-08**: Added "Fullstack Vue + Tailwind + .NET Modular Monolith" post.
+- **2025-07-27**: Added "Modular Monolith: Architecture that combines the benefits of Monolith and Microservices" post.
+- **2025-07-20**: Added "Transform Your Idea into a Hero App, Faster: A 3-Phase Journey" post.
+- **2025-05-28**: Added "Markdown Syntax Guide" post.
 - **2025-05-04**: Added "Mad Unicorn CliftonStrengths" post.
-  - Commit `615afdf`: Added the post.
-  - Commit `4db5a93`: Corrected tag capitalization for 'Tech Startup' in English and Thai versions.
-
 - **2025-05-04**: Added "The Human Algorithm" post.
-  - Commit `045376c`: Added the post and adjusted related tags and categories.
-  - Commit `cda6b9d`: Updated references from "book" to "article" for clarity.
-
 - **2025-06-04**: Added "GitHub Copilot" post.
-  - Commit `27eb6b4`: Added the Thai version of the post.
-  - Commit `593edd9`: Added the English version of the post.
-  - Commit `743243e`: Enhanced the post by adding additional tags: 'github', 'AI', and 'github-copilot'.
-
 - **2025-06-04**: Added "Pride Month" post.
-  - Commit `0bf8853`: Added the Thai version of the post.
-  - Commit `cea398f`: Added the English version of the post.
-
 - **2025-07-11**: Added "WindRecorder Personal Memory Search" post.
-  - Commit `99e66c4`: Added the post in Thai and English.
-
 - **2025-07-13**: Added "Future Skills 2030" post.
-  - Commit `798c28e`: Planned the post.
-  - Commit `250ff42`: Added the post in Thai and English.
-
 - **2025-07-13**: Added "Gemini CLI Developer Productivity" post.
-  - Commit `b364442`: Added the post in Thai and English.
-  - Commit `5f921a0`: Deleted an associated image.
-
-- **2025-08-11**: Added "Fullstack Vue + Tailwind + .NET Modular Monolith" post.
-  - Commit `abc1234`: Added the post in Thai and English.
-  - Commit `def5678`: Updated tags and categories for better discoverability.
 
 ### Bug Fixes
 
