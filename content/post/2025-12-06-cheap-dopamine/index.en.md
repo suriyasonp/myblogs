@@ -50,7 +50,7 @@ When you detach from cheap dopamine, you reset your brain's baseline. Boredom be
 1.  **Digital Detox:** Set strict limits on social media and entertainment usage.
 2.  **Embrace Boredom:** Let yourself do nothing for a while. Let your mind wander without reaching for your phone.
 3.  **Do Hard Things:** Intentionally schedule difficult tasks early in the day when your willpower is highest.
-4.  **Visualize Long-Term Rewards:** Keep your eyes on the prize. Remind yourself *why* you are making these sacrifices.
+4. **Visualize Long-Term Rewards:** Keep your eyes on the prize. Remind yourself *why* you are making these sacrifices.
 
 ![Cheap Dopamine vs Expensive Dopamine](dopamine-info-en.png)
 
