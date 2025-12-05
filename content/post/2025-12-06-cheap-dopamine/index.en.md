@@ -1,6 +1,6 @@
 ---
 title: "You can get success if you avoid cheap dopamine"
-date: 2025-12-05
+date: 2025-12-06
 draft: false
 slug: "cheap-dopamine-success"
 author: "Suriya Sonphu"
