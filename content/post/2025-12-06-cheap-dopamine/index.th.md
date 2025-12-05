@@ -1,6 +1,6 @@
 ---
 title: "คุณจะประสบความสำเร็จได้ หากคุณหลีกเลี่ยง Cheap Dopamine"
-date: 2025-12-06
+date: 2025-12-05
 draft: false
 slug: "cheap-dopamine-success"
 author: "Suriya Sonphu"
