@@ -1,6 +1,6 @@
 ---
 title: "คุณจะประสบความสำเร็จได้ หากคุณหลีกเลี่ยง Cheap Dopamine"
-date: 2025-12-05
+date: 2025-12-06
 draft: false
 slug: "cheap-dopamine-success"
 author: "Suriya Sonphu"
@@ -12,7 +12,7 @@ tags:
   - "Success"
   - "Focus"
   - "Self-Improvement"
-image: cover.jpeg
+image: cover.png
 description: "เรียนรู้ว่าการหลีกเลี่ยงโดปามีนราคาถูกจากโซเชียลมีเดียและความสุขชั่ววูบ จะนำไปสู่ความสำเร็จและการโฟกัสที่ดีขึ้นในระยะยาวได้อย่างไร"
 ---
 
