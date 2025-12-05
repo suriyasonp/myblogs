@@ -70,11 +70,11 @@ Pull requests are welcome! For major changes, please open an issue first to disc
 The codebase, including Hugo templates, configurations, and theme files, is licensed under the MIT License. You are free to use, modify, and distribute the code as long as you include the original copyright notice.
 
 ### Content of Posts
-The content of posts, including text, images, and other media, is licensed under the Creative Commons Attribution-NonCommercial-NoDerivatives (CC BY-NC-ND) license. You may share the content but cannot use it for commercial purposes or create derivative works.
+The content of posts, including text, images, and other media, is protected by "All Rights Reserved" copyright. No part of this content may be reproduced, distributed, or transmitted in any form or by any means, without the prior written permission of the author.
 
 For more details:
 - MIT License: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
-- CC BY-NC-ND License: [https://creativecommons.org/licenses/by-nc-nd/4.0/](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+- All Rights Reserved: This is the default under international copyright law.
 
 ## Change History
 
