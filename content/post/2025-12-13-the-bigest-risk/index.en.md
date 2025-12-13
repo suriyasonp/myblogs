@@ -57,6 +57,8 @@ Here are the key lessons I distilled from her experiences at IBM, Thaicom, and D
 
 > "You don’t need to know 100% to start, but you must do 100% of what you know."
 
+![](post-en.jpeg)
+
 ### Reference
 * [The Biggest Risk Is Taking No Risk At All](https://youtu.be/OcmKfsBmhfc?si=L12QXocl872NGwE4)
 
