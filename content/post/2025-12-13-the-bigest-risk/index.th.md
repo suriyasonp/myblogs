@@ -57,6 +57,8 @@ description: "ผมเพิ่งได้ดูบทสัมภาษณ์
 
 > "คุณไม่จำเป็นต้องรู้ 100% เพื่อที่จะเริ่มต้น แต่คุณต้องทำ 100% ในสิ่งที่คุณรู้"
 
+![](post-th.png)
+
 ### อ้างอิง
 * [The Biggest Risk Is Taking No Risk At All](https://youtu.be/OcmKfsBmhfc?si=L12QXocl872NGwE4)
 
