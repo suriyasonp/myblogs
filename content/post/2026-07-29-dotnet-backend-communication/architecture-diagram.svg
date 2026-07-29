@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">REST and SignalR communication between two .NET backends</title>
+  <desc id="desc">Order API uses REST for request and response, and receives realtime stock change events from Inventory API through SignalR.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F7F3E8"/>
+      <stop offset="1" stop-color="#EAF2ED"/>
+    </linearGradient>
+    <linearGradient id="orderGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#173C4B"/>
+      <stop offset="1" stop-color="#245C68"/>
+    </linearGradient>
+    <linearGradient id="inventoryGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9D462D"/>
+      <stop offset="1" stop-color="#C46B3B"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#173C4B" flood-opacity="0.13"/>
+    </filter>
+    <marker id="arrowNavy" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#173C4B"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 Z" fill="#D66A3A"/>
+    </marker>
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="2" fill="#173C4B" opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="900" fill="#F7F3E8"/>
+  <circle cx="1480" cy="80" r="170" fill="#E9B872" opacity="0.18"/>
+  <circle cx="110" cy="840" r="210" fill="#4F8C87" opacity="0.12"/>
+
+  <text x="100" y="90" fill="#173C4B" font-family="'Avenir Next', 'Helvetica Neue', sans-serif" font-size="46" font-weight="700">Two .NET Backends, Two Communication Modes</text>
+  <text x="102" y="132" fill="#48636B" font-family="'Avenir Next', 'Helvetica Neue', sans-serif" font-size="23">REST answers a question. SignalR announces a change.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="95" y="220" width="345" height="490" rx="34" fill="#173C4B"/>
+    <rect x="1160" y="220" width="345" height="490" rx="34" fill="#B75534"/>
+  </g>
+
+  <g font-family="'Avenir Next', 'Helvetica Neue', sans-serif" fill="#FFFFFF">
+    <rect x="145" y="273" width="92" height="92" rx="24" fill="#FFFFFF" opacity="0.13"/>
+    <path d="M170 300h42v42h-42z M179 290h24v12h-24z M180 311h22 M180 321h22 M180 331h14" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="145" y="418" font-size="38" font-weight="700">Order API</text>
+    <text x="145" y="456" font-size="21" opacity="0.78">ASP.NET Core</text>
+    <line x1="145" y1="492" x2="390" y2="492" stroke="#FFFFFF" opacity="0.18"/>
+    <text x="145" y="536" font-size="20" opacity="0.9">Creates orders</text>
+    <text x="145" y="571" font-size="20" opacity="0.9">Checks stock</text>
+    <text x="145" y="606" font-size="20" opacity="0.9">Receives live updates</text>
+
+    <rect x="1210" y="273" width="92" height="92" rx="24" fill="#FFFFFF" opacity="0.13"/>
+    <path d="M1234 298h44v13h-44z M1234 318h44v13h-44z M1234 338h44v13h-44z" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round"/>
+    <circle cx="1267" cy="304.5" r="2.5" fill="#FFFFFF"/>
+    <circle cx="1267" cy="324.5" r="2.5" fill="#FFFFFF"/>
+    <circle cx="1267" cy="344.5" r="2.5" fill="#FFFFFF"/>
+    <text x="1210" y="418" font-size="38" font-weight="700">Inventory API</text>
+    <text x="1210" y="456" font-size="21" opacity="0.78">ASP.NET Core</text>
+    <line x1="1210" y1="492" x2="1455" y2="492" stroke="#FFFFFF" opacity="0.18"/>
+    <text x="1210" y="536" font-size="20" opacity="0.9">Owns stock data</text>
+    <text x="1210" y="571" font-size="20" opacity="0.9">Answers queries</text>
+    <text x="1210" y="606" font-size="20" opacity="0.9">Publishes changes</text>
+  </g>
+
+  <g font-family="'Avenir Next', 'Helvetica Neue', sans-serif">
+    <rect x="515" y="218" width="570" height="235" rx="28" fill="#FFFFFF" opacity="0.94" filter="url(#shadow)"/>
+    <rect x="548" y="246" width="190" height="38" rx="19" fill="#DDE9E5"/>
+    <text x="571" y="272" fill="#173C4B" font-size="18" font-weight="700" letter-spacing="1.5">REQUEST / RESPONSE</text>
+    <text x="548" y="324" fill="#173C4B" font-size="30" font-weight="700">REST over HTTPS</text>
+    <text x="548" y="359" fill="#5B7076" font-size="19">Get stock, reserve stock, return status</text>
+
+    <line x1="560" y1="396" x2="1038" y2="396" stroke="#173C4B" stroke-width="5" stroke-linecap="round" marker-end="url(#arrowNavy)"/>
+    <path d="M1038 396l-24-13v26z" fill="#173C4B"/>
+    <text x="675" y="387" fill="#173C4B" font-size="18" font-weight="600">GET /api/products/P-100/stock</text>
+    <path d="M1038 425 C900 470, 700 470, 560 425" fill="none" stroke="#4F8C87" stroke-width="4" stroke-dasharray="10 10" marker-end="url(#arrowNavy)"/>
+    <path d="M560 425l24-13v26z" fill="#4F8C87"/>
+
+    <rect x="515" y="492" width="570" height="218" rx="28" fill="#FFFFFF" opacity="0.94" filter="url(#shadow)"/>
+    <rect x="548" y="520" width="123" height="38" rx="19" fill="#F7E1D5"/>
+    <text x="570" y="546" fill="#9D462D" font-size="18" font-weight="700" letter-spacing="1.5">REALTIME</text>
+    <text x="548" y="599" fill="#173C4B" font-size="30" font-weight="700">SignalR persistent connection</text>
+    <text x="548" y="634" fill="#5B7076" font-size="19">Push StockChanged while the client is online</text>
+    <line x1="1038" y1="674" x2="560" y2="674" stroke="#D66A3A" stroke-width="6" stroke-linecap="round" marker-end="url(#arrowOrange)"/>
+    <path d="M560 674l24-14v28z" fill="#D66A3A"/>
+    <circle cx="690" cy="674" r="8" fill="#D66A3A"/>
+    <circle cx="800" cy="674" r="8" fill="#D66A3A"/>
+    <circle cx="910" cy="674" r="8" fill="#D66A3A"/>
+    <text x="706" y="666" fill="#9D462D" font-size="18" font-weight="600">StockChanged</text>
+  </g>
+
+  <g font-family="'Avenir Next', 'Helvetica Neue', sans-serif">
+    <rect x="380" y="764" width="840" height="79" rx="39.5" fill="#173C4B"/>
+    <circle cx="430" cy="803.5" r="19" fill="#E9B872"/>
+    <path d="M421 803l7 7 13-16" fill="none" stroke="#173C4B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="467" y="798" fill="#FFFFFF" font-size="20" font-weight="700">Reconnect strategy</text>
+    <text x="467" y="824" fill="#DCE8E5" font-size="18">After a disconnect, reconnect SignalR and re-sync the latest snapshot through REST.</text>
+  </g>
+</svg>
