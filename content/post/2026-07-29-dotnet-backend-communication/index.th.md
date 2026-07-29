@@ -1,5 +1,5 @@
 ---
-title: "ออกแบบการสื่อสารระหว่างสอง .NET Backends: REST สำหรับ Request และ SignalR สำหรับ Realtime"
+title: "สอง .NET Backends จะคุยกันอย่างไร? REST สำหรับ Request และ SignalR สำหรับ Realtime"
 date: 2026-07-29
 draft: false
 slug: "dotnet-backend-communication-rest-signalr"
@@ -16,25 +16,27 @@ tags:
     - Distributed Systems
     - System Design
 image: cover.png
-description: "แนวทางเลือก protocol สำหรับให้สอง .NET backends แลกเปลี่ยนข้อมูล ทั้งแบบ request-response และ realtime พร้อมตัวอย่าง ASP.NET Core ที่ใช้ REST ร่วมกับ SignalR และข้อควรระวังสำหรับระบบจริง"
+description: "มาดูกันว่าสอง .NET backends สามารถแลกเปลี่ยนข้อมูลกันด้วย protocol อะไรบ้าง พร้อมตัวอย่าง REST สำหรับ request-response และ SignalR สำหรับ realtime"
 ---
 
-เมื่อระบบมี backend มากกว่าหนึ่งตัว คำถามแรกมักเป็น “จะให้สองระบบคุยกันด้วย protocol อะไร” แต่คำถามที่ช่วยให้เราออกแบบได้ดีกว่าคือ “ผู้ส่งต้องการคำตอบทันทีหรือไม่ และข้อมูลที่ส่งต้องห้ามสูญหายหรือเปล่า”
+เวลาเราเริ่มแยกระบบออกเป็น backend มากกว่าหนึ่งตัว สิ่งที่ตามมาทันทีคือ แล้วแต่ละระบบจะคุยกันอย่างไร?
 
-บทความนี้ใช้ตัวอย่างสองระบบ:
+จริงๆ แล้วมี protocol ให้เลือกหลายแบบ ทั้ง REST, gRPC, WebSocket, SignalR รวมถึง Message broker แต่ก่อนจะเลือกใช้ตัวไหน เราต้องตอบให้ได้ก่อนว่า การสื่อสารครั้งนั้นต้องการคำตอบกลับมาทันทีหรือไม่ และข้อมูลที่ส่งออกไปยอมให้หายได้หรือเปล่า
+
+ในบทความนี้ผมจะยกตัวอย่างสองระบบ เพื่อให้เห็นภาพง่ายขึ้น:
 
 - **Order API** รับผิดชอบการสร้างและติดตามคำสั่งซื้อ
 - **Inventory API** เป็นเจ้าของข้อมูลสต็อกสินค้า
 
-เมื่อ Order API ต้องตรวจว่าสินค้ามีพอหรือไม่ มันต้องส่งคำถามและรอคำตอบ นี่คือการสื่อสารแบบ **request-response** ซึ่ง REST เหมาะกับงานนี้
+กรณีที่ Order API ต้องตรวจสอบว่าสินค้ามีพอหรือไม่ ระบบต้องส่งคำถามไปหา Inventory API และรอคำตอบกลับมา แบบนี้เรียกว่า **request-response** ซึ่ง REST เหมาะกับงานลักษณะนี้
 
-แต่เมื่อจำนวนสินค้าเปลี่ยน และ Order API ต้องรู้การเปลี่ยนแปลงโดยไม่ต้องยิง request ถามซ้ำทุกวินาที เราต้องการช่องทางแบบ **realtime** ซึ่ง SignalR เหมาะกับการแจ้งเตือนลักษณะนี้
+แต่ถ้าจำนวนสินค้าเปลี่ยน แล้วเราต้องการให้ Inventory API แจ้ง Order API ทันที โดยไม่ต้องคอยยิง request ถามซ้ำทุกวินาที แบบนี้เราต้องการการสื่อสารแบบ **realtime** ซึ่ง SignalR เข้ามาช่วยตรงนี้ได้
 
-สองวิธีนี้ไม่จำเป็นต้องเลือกอย่างใดอย่างหนึ่ง ระบบที่ดีมักใช้ทั้งคู่ โดยให้แต่ละวิธีรับผิดชอบงานที่ตัวเองถนัด
+อย่าเพิ่งคิดว่าเราต้องเลือก REST หรือ SignalR อย่างใดอย่างหนึ่ง เพราะในระบบจริงเราสามารถใช้ทั้งสองแบบร่วมกันได้ โดยให้แต่ละตัวทำงานที่ตัวเองถนัด
 
-## เริ่มจากรูปแบบการสื่อสาร ไม่ใช่ชื่อ protocol
+## ก่อนเลือก Protocol ลองดูรูปแบบการสื่อสารก่อน
 
-การสื่อสารระหว่าง backend แบ่งเป็นรูปแบบหลักได้ดังนี้
+การสื่อสารระหว่าง backend สามารถแบ่งรูปแบบหลักๆ ได้ดังนี้
 
 | รูปแบบ | ผู้ส่งรอคำตอบหรือไม่ | ตัวอย่าง | ทางเลือกที่พบบ่อย |
 |---|---:|---|---|
@@ -43,70 +45,72 @@ description: "แนวทางเลือก protocol สำหรับใ�
 | Asynchronous messaging | ไม่รอและต้องส่งให้ถึง | order created, payment completed | RabbitMQ, Azure Service Bus, Kafka |
 | Streaming | รับข้อมูลต่อเนื่อง | telemetry, log stream, market feed | gRPC streaming, Kafka, WebSocket |
 
-คำว่า **realtime** ไม่ได้แปลว่า **reliable** เสมอไป SignalR ส่งข้อมูลไปยัง connection ที่เชื่อมต่ออยู่ได้รวดเร็ว แต่ถ้าผู้รับ offline ในขณะนั้น ข้อความอาจไม่ถูกเก็บไว้รอส่งภายหลัง ถ้าทุก event ต้องส่งถึงผู้รับอย่างน้อยหนึ่งครั้ง ควรใช้ message broker เช่น RabbitMQ หรือ Azure Service Bus แทน หรือใช้ broker ร่วมกับ SignalR
+จุดที่หลายคนอาจเข้าใจผิดคือคำว่า **realtime** ไม่ได้แปลว่า **reliable** เสมอไป SignalR ส่งข้อมูลไปยัง connection ที่กำลังเชื่อมต่ออยู่ได้รวดเร็วก็จริง แต่ถ้าผู้รับ offline อยู่ในเวลานั้น ข้อความไม่ได้ถูกเก็บไว้รอส่งให้อัตโนมัติ
 
-## Protocol ที่ควรรู้จัก
+ดังนั้นถ้า event ทุกตัวต้องส่งถึงผู้รับอย่างน้อยหนึ่งครั้ง ควรพิจารณา Message broker เช่น RabbitMQ หรือ Azure Service Bus หรืออาจใช้ broker ร่วมกับ SignalR ก็ได้ (เดี๋ยวเราจะกลับมาที่เรื่องนี้อีกครั้ง)
+
+## มาดูกันว่าแต่ละ Protocol เหมาะกับอะไรบ้าง
 
 ### HTTP/REST
 
-REST ใช้ HTTP เป็นพื้นฐาน ข้อมูลมักอยู่ในรูป JSON และสื่อความหมายผ่าน resource, URL, HTTP method และ status code เช่น:
+REST เป็นแบบที่ Developer ส่วนใหญ่น่าจะคุ้นเคยกันดี โดยใช้ HTTP เป็นพื้นฐาน ข้อมูลมักอยู่ในรูป JSON และสื่อความหมายผ่าน resource, URL, HTTP method และ status code เช่น:
 
 ```http
 GET /api/products/P-100/stock
 ```
 
-จุดแข็งของ REST คือเข้าใจง่าย ทดสอบด้วยเครื่องมือทั่วไปได้ มี logging และ observability รองรับดี รวมถึงทำงานข้ามภาษาและ platform ได้สะดวก ข้อแลกเปลี่ยนคือ JSON มีขนาดใหญ่กว่า binary protocol และ contract อาจไม่เข้มเท่า gRPC หากไม่มี OpenAPI หรือการสร้าง client จาก schema
+ข้อดีของ REST คือเข้าใจง่าย ทดสอบด้วยเครื่องมือทั่วไปได้ มี logging และ observability รองรับค่อนข้างดี รวมถึงทำงานข้ามภาษาและ platform ได้สะดวก ส่วนข้อแลกเปลี่ยนคือ JSON มีขนาดใหญ่กว่า binary protocol และ contract อาจไม่เข้มเท่า gRPC หากเราไม่ได้ใช้ OpenAPI หรือ generate client จาก schema
 
-เหมาะกับ public API, CRUD, การ query ข้อมูล และคำสั่งที่ผู้เรียกต้องรู้ผลทันที
+โดยส่วนใหญ่ REST เหมาะกับ public API, CRUD, การ query ข้อมูล และ operation ที่ผู้เรียกต้องรู้ผลทันที
 
 ### gRPC
 
-gRPC ใช้ Protocol Buffers กำหนด contract และโดยทั่วไปทำงานบน HTTP/2 มี payload แบบ binary ที่เล็กและเร็ว รองรับ unary call รวมถึง client, server และ bidirectional streaming
+gRPC ใช้ Protocol Buffers ในการกำหนด contract และโดยทั่วไปทำงานบน HTTP/2 ข้อมูลเป็น binary ทำให้ payload มีขนาดเล็กและเร็วกว่า JSON นอกจากนี้ยังรองรับทั้ง unary call, client streaming, server streaming และ bidirectional streaming
 
-เหมาะกับ internal service-to-service communication ที่ทั้งสองฝั่งควบคุมได้ ต้องการ type-safe contract หรือมีปริมาณ request สูง ข้อแลกเปลี่ยนคือ debug ด้วยตาเปล่ายากกว่า REST และการเชื่อมต่อจาก browser มีข้อจำกัดมากกว่า
+ตัวนี้เหมาะกับ internal service-to-service communication ที่เราควบคุมได้ทั้งสองฝั่ง ต้องการ type-safe contract หรือมี request ปริมาณสูง แต่ข้อแลกเปลี่ยนคือเวลา debug เราจะเปิดดู payload ด้วยตาเปล่าไม่ง่ายเหมือน REST และการเชื่อมต่อจาก browser ก็มีข้อจำกัดมากกว่า
 
 ### WebSocket
 
-WebSocket เปิด connection สองทิศทางค้างไว้ ทั้ง client และ server จึงส่งข้อมูลหาอีกฝ่ายได้ตลอดเวลา มี overhead ต่อ message ต่ำ แต่เราต้องออกแบบ message format, routing, connection lifecycle, reconnect และ error handling เองมากขึ้น
+WebSocket จะเปิด connection สองทิศทางค้างไว้ ทำให้ทั้ง client และ server ส่งข้อมูลหาอีกฝ่ายได้ตลอดเวลา มี overhead ต่อ message ค่อนข้างต่ำ ฟังดูดี แต่สิ่งที่ตามมาคือเราต้องออกแบบ message format, routing, connection lifecycle, reconnect และ error handling เองมากขึ้น
 
-เหมาะเมื่อเราต้องการ protocol เฉพาะหรือควบคุมระดับ transport อย่างละเอียด
+WebSocket จึงเหมาะกับกรณีที่เราต้องการ protocol เฉพาะ หรือต้องการควบคุมในระดับ transport อย่างละเอียดจริงๆ
 
 ### SignalR
 
-SignalR เป็น abstraction สำหรับ realtime communication ใน ASP.NET Core โดยมี Hub เป็นจุดรับส่งข้อความ รองรับการส่งไปยัง connection รายตัว user, group หรือทุก connection และเลือก transport ที่เหมาะสมให้ เช่น WebSocket เมื่อ environment รองรับ
+SignalR เป็น abstraction สำหรับ realtime communication ใน ASP.NET Core โดยมี Hub เป็นจุดรับส่งข้อความ เราสามารถส่งข้อมูลไปยัง connection รายตัว, user, group หรือทุก connection ได้ และ SignalR จะเลือก transport ที่เหมาะสมให้ เช่น ใช้ WebSocket เมื่อ environment รองรับ
 
-จุดเด่นคือ integrate กับ dependency injection, authentication, authorization และ logging ของ ASP.NET Core ได้ดี มี client library สำหรับ .NET, JavaScript, Java และ Swift สำหรับสอง .NET backends ฝั่งที่รับ event สามารถใช้ `Microsoft.AspNetCore.SignalR.Client` เชื่อมต่อเป็น .NET client ได้โดยตรง
+ข้อดีคือ integrate กับ dependency injection, authentication, authorization และ logging ของ ASP.NET Core ได้ดี มี client library สำหรับ .NET, JavaScript, Java และ Swift ในกรณีของเราที่เป็นสอง .NET backends ฝั่งรับ event สามารถใช้ `Microsoft.AspNetCore.SignalR.Client` เชื่อมต่อได้โดยตรง
 
-SignalR เหมาะกับการ push notification และข้อมูลสด แต่ไม่ใช่ durable queue และ Hub มีอายุสั้น จึงไม่ควรเก็บ application state ไว้ใน instance ของ Hub
+SignalR เหมาะกับการ push notification และข้อมูลสด แต่ต้องย้ำอีกครั้งว่า SignalR ไม่ใช่ durable queue และ Hub มีอายุสั้น เราจึงไม่ควรเก็บ application state ไว้ใน instance ของ Hub
 
 ### Server-Sent Events หรือ SSE
 
-SSE ส่ง event จาก server ไป client ทางเดียวผ่าน HTTP เหมาะกับ progress, notification หรือ feed ที่ client ไม่จำเป็นต้องส่งข้อมูลกลับผ่าน connection เดียวกัน ใช้ง่ายกว่า WebSocket ในกรณี one-way push แต่ SignalR มักสะดวกกว่าสำหรับระบบ .NET ที่ต้องรองรับหลาย transport และสื่อสารสองทิศทาง
+SSE ส่ง event จาก server ไป client ทางเดียวผ่าน HTTP เหมาะกับ progress, notification หรือ feed ที่ client ไม่จำเป็นต้องส่งข้อมูลกลับมาทาง connection เดียวกัน ถ้าเป็น one-way push แบบง่ายๆ SSE ก็เป็นตัวเลือกที่น่าสนใจ แต่สำหรับระบบ .NET ที่ต้องสื่อสารสองทิศทาง SignalR มักจะใช้งานได้สะดวกกว่า
 
 ### Message broker
 
-RabbitMQ, Azure Service Bus และ Kafka ไม่ใช่ทางเลือกแทน REST ทุกกรณี แต่เป็นคำตอบเมื่อผู้ส่งไม่ควรผูก availability กับผู้รับ หรือต้องการเก็บ message จนกว่าจะประมวลผลสำเร็จ
+RabbitMQ, Azure Service Bus และ Kafka ไม่ได้เข้ามาแทน REST ในทุกกรณี แต่จะตอบโจทย์เมื่อผู้ส่งไม่ควรผูก availability ไว้กับผู้รับ หรือต้องการเก็บ message เอาไว้จนกว่าจะประมวลผลสำเร็จ
 
-ถ้า Inventory API ต้องรับประกันว่า Order API จะได้รับ `StockChanged` แม้ Order API ล่มอยู่ SignalR อย่างเดียวไม่พอ ควร publish event ไปยัง broker แล้วให้ Order API consume เมื่อกลับมาทำงาน ส่วน SignalR อาจยังใช้สำหรับ push event ไปยัง dashboard หรือ connection ที่ online อยู่
+ลองนึกภาพว่า Inventory API ต้องรับประกันว่า Order API จะได้รับ `StockChanged` แม้ในเวลาที่ Order API ล่มอยู่ กรณีนี้ SignalR อย่างเดียวไม่พอ เราควร publish event ไปยัง broker แล้วให้ Order API กลับมา consume เมื่อพร้อมทำงาน ส่วน SignalR ยังสามารถใช้ push event ไปยัง dashboard หรือ connection ที่ online อยู่ได้ตามปกติ
 
-## แบบที่แนะนำ: REST เป็นคำตอบ SignalR เป็นสัญญาณ
+## แบบที่ผมเลือก: REST เป็นคำตอบ SignalR เป็นสัญญาณ
 
 ![แผนภาพการสื่อสารระหว่าง Order API และ Inventory API ด้วย REST และ SignalR](architecture-diagram.svg)
 
-แนวทางในภาพแบ่งหน้าที่ชัดเจน:
+จากภาพผมแบ่งหน้าที่ของทั้งสอง protocol ไว้ดังนี้:
 
 1. Order API เรียก REST เพื่ออ่านสต็อกหรือสั่ง reserve สินค้า และรอผลลัพธ์ที่ชัดเจน
 2. Order API เปิด SignalR connection ค้างไว้เพื่อรับ `StockChanged` ทันที
 3. ถ้า SignalR หลุด client จะ reconnect อัตโนมัติ
 4. หลัง reconnect ให้ Order API query snapshot ล่าสุดผ่าน REST อีกครั้ง เพราะ event ที่เกิดตอน connection หลุดอาจหายไป
 
-หัวใจของแบบนี้คือ **event บอกว่ามีบางอย่างเปลี่ยน แต่ REST บอกสถานะล่าสุดที่เชื่อถือได้**
+จำง่ายๆ คือ **event บอกว่ามีบางอย่างเปลี่ยน แต่ REST ใช้ถามสถานะล่าสุดที่เชื่อถือได้**
 
-## ตัวอย่างฝั่ง Inventory API
+## ลองสร้างฝั่ง Inventory API
 
-ตัวอย่างนี้ใช้ Minimal API เพื่อให้เห็นส่วนสำคัญโดยไม่ถูกกลบด้วยโครงสร้างอื่น
+ตัวอย่างนี้ผมเลือกใช้ Minimal API เพื่อให้เราเห็นเฉพาะส่วนสำคัญก่อน โดยไม่ต้องสนใจโครงสร้างอื่นมากจนเกินไป
 
-เริ่มจาก model และ strongly typed Hub contract:
+เริ่มจากสร้าง model และ strongly typed Hub contract:
 
 ```csharp
 using Microsoft.AspNetCore.SignalR;
@@ -133,9 +137,9 @@ public sealed class InventoryHub : Hub<IInventoryClient>
 }
 ```
 
-Strongly typed Hub ช่วยตรวจชื่อ method และชนิดข้อมูลตอน compile แทนการกระจาย magic string หลายจุดใน codebase
+เหตุผลที่เลือกใช้ strongly typed Hub เพราะช่วยตรวจชื่อ method และชนิดข้อมูลได้ตั้งแต่ตอน compile แทนที่จะกระจาย magic string ไว้หลายจุดใน codebase (พิมพ์ชื่อผิดก็รู้ก่อนรัน)
 
-จากนั้นเปิด REST endpoint และ SignalR Hub:
+จากนั้นสร้าง REST endpoint และเปิด SignalR Hub:
 
 ```csharp
 using System.Collections.Concurrent;
@@ -189,15 +193,15 @@ app.MapHub<InventoryHub>("/hubs/inventory");
 app.Run();
 ```
 
-จุดที่ควรสังเกตคือ code ไม่ได้สร้าง `InventoryHub` ขึ้นมาเอง แต่ใช้ `IHubContext` เพื่อส่ง event จาก endpoint หรือ application service เพราะ Hub เป็น transient object และไม่ควรถูกใช้เป็นที่เก็บ state
+จุดที่อยากให้สังเกตคือ code ไม่ได้สร้าง `InventoryHub` ขึ้นมาเอง แต่ใช้ `IHubContext` เพื่อส่ง event จาก endpoint หรือ application service เนื่องจาก Hub เป็น transient object และไม่ควรถูกใช้เป็นที่เก็บ state
 
-ตัวอย่างเก็บข้อมูลใน memory เพื่อให้สั้น ในระบบจริงควรเขียน database ให้สำเร็จก่อน push event และต้องพิจารณาปัญหา dual write: ถ้า database commit สำเร็จ แต่ process หยุดก่อนส่ง event ผู้รับจะไม่รู้ว่าข้อมูลเปลี่ยน สำหรับ event สำคัญให้ใช้ **Transactional Outbox** ร่วมกับ message broker
+เพื่อให้ตัวอย่างไม่ยาวเกินไป ผมเก็บข้อมูลไว้ใน memory ก่อน แต่ในระบบจริงเราควรเขียน database ให้สำเร็จแล้วจึง push event และยังต้องคิดถึงปัญหา dual write ด้วย เช่น database commit สำเร็จ แต่ process หยุดก่อนส่ง event แบบนี้ผู้รับจะไม่รู้เลยว่าข้อมูลเปลี่ยน หากเป็น event สำคัญควรใช้ **Transactional Outbox** ร่วมกับ Message broker
 
-## ตัวอย่าง REST client ใน Order API
+## ให้ Order API เรียกข้อมูลผ่าน REST
 
-อย่าสร้าง `new HttpClient()` ใหม่ทุก request เพราะอาจนำไปสู่ปัญหา socket/port exhaustion และการจัดการ DNS ที่ไม่เหมาะสม ในแอปที่ใช้ dependency injection ให้ใช้ `IHttpClientFactory` หรือ typed client
+ฝั่ง Order API จะเรียก REST ไปหา Inventory API สิ่งหนึ่งที่ควรระวังคือไม่ควรสร้าง `new HttpClient()` ใหม่ทุก request เพราะอาจเจอปัญหา socket/port exhaustion และการจัดการ DNS ที่ไม่เหมาะสม ในแอปที่ใช้ dependency injection เราสามารถใช้ `IHttpClientFactory` หรือ typed client ได้
 
-สร้าง client ที่ซ่อนรายละเอียด HTTP ไว้ใน class เดียว:
+เริ่มจากสร้าง client ที่ซ่อนรายละเอียด HTTP ไว้ใน class เดียว:
 
 ```csharp
 using System.Net;
@@ -226,7 +230,7 @@ public sealed class InventoryClient(HttpClient httpClient)
 }
 ```
 
-ลงทะเบียน typed client ใน `Program.cs`:
+แล้วลงทะเบียน typed client ใน `Program.cs`:
 
 ```csharp
 var builder = WebApplication.CreateBuilder(args);
@@ -242,7 +246,7 @@ builder.Services.AddHttpClient<InventoryClient>(httpClient =>
 });
 ```
 
-และเรียกใช้จาก endpoint:
+จากนั้นนำไปเรียกใช้จาก endpoint:
 
 ```csharp
 app.MapPost("/api/orders", async (
@@ -269,23 +273,23 @@ app.MapPost("/api/orders", async (
 });
 ```
 
-สำหรับ production ควรเพิ่ม resilience handler เพื่อรับมือ transient failure แต่ต้องระวังการ retry:
+เมื่อนำไปใช้บน production เราควรเพิ่ม resilience handler เพื่อรับมือ transient failure แต่อย่าเพิ่งใส่ retry ให้ทุกอย่าง เพราะ operation แต่ละแบบมีผลไม่เหมือนกัน:
 
 - Retry `GET` มักปลอดภัยเพราะเป็น idempotent operation
-- อย่า retry `POST` ที่สร้างข้อมูลโดยอัตโนมัติ ถ้ายังไม่มี idempotency key
+- ไม่ควร retry `POST` ที่สร้างข้อมูลโดยอัตโนมัติ ถ้ายังไม่มี idempotency key
 - กำหนด timeout เสมอ เพื่อไม่ให้ request ค้างจน thread และ connection ถูกใช้หมด
 - แยกผลลัพธ์ business error เช่น stock ไม่พอ ออกจาก technical error เช่น timeout หรือ service unavailable
 - ใช้ cancellation token ต่อเนื่องจาก incoming request ไปยัง outgoing request
 
-## ตัวอย่าง SignalR client ใน Order API
+## ต่อ Realtime ด้วย SignalR
 
-ติดตั้ง client package:
+ต่อไปเราจะให้ Order API รับ event แบบ realtime เริ่มจากติดตั้ง client package:
 
 ```bash
 dotnet add package Microsoft.AspNetCore.SignalR.Client
 ```
 
-สร้าง `BackgroundService` เพื่อดูแล connection:
+แล้วสร้าง `BackgroundService` ไว้ดูแล connection:
 
 ```csharp
 using Microsoft.AspNetCore.SignalR.Client;
@@ -368,20 +372,20 @@ public sealed class InventoryRealtimeWorker(
 }
 ```
 
-ลงทะเบียน worker และ store:
+สุดท้ายลงทะเบียน worker และ store:
 
 ```csharp
 builder.Services.AddSingleton<InventorySnapshotStore>();
 builder.Services.AddHostedService<InventoryRealtimeWorker>();
 ```
 
-`WithAutomaticReconnect()` ช่วย reconnect หลัง connection ที่เริ่มสำเร็จแล้วหลุด แต่การเชื่อมต่อครั้งแรกยังต้องจัดการ retry เอง จึงมี `StartWithRetryAsync` ในตัวอย่าง
+`WithAutomaticReconnect()` ช่วย reconnect ในกรณีที่ connection เคยเชื่อมต่อสำเร็จแล้วหลุด แต่ตอนเริ่มเชื่อมต่อครั้งแรกเรายังต้องจัดการ retry เอง จึงมี `StartWithRetryAsync` อยู่ในตัวอย่าง
 
-อย่าใช้ข้อมูลใน memory snapshot เป็นหลักฐานสุดท้ายสำหรับการตัดสินใจที่สำคัญ เช่น การตัดสต็อกจริง เพราะข้อมูลอาจเก่าหรือมี event หลุด ให้ใช้ snapshot เพื่อแสดงผลหรือช่วยลดการ query และยืนยันสถานะกับ Inventory API ในขั้นตอนทำธุรกรรมเสมอ
+ข้อมูลใน memory snapshot เหมาะกับการแสดงผลหรือช่วยลดจำนวน query แต่ไม่ควรใช้เป็นข้อมูลสุดท้ายสำหรับการตัดสินใจสำคัญ เช่น การตัดสต็อกจริง เพราะข้อมูลอาจเก่าหรือมี event หลุดได้ ก่อนทำ transaction เราควรยืนยันสถานะกับ Inventory API อีกครั้งเสมอ
 
-## Security ระหว่างสอง backends
+## อย่าลืมเรื่อง Security
 
-การอยู่ใน private network ไม่ได้แปลว่า request เชื่อถือได้โดยอัตโนมัติ อย่างน้อยควรมี:
+ถึงแม้สอง backends จะอยู่ใน private network ก็ไม่ได้หมายความว่าทุก request เชื่อถือได้โดยอัตโนมัติ อย่างน้อยระบบควรมี:
 
 - HTTPS เพื่อเข้ารหัสข้อมูลระหว่างทาง
 - OAuth 2.0 Client Credentials, workload identity หรือ mTLS เพื่อยืนยันตัวตนของ service
@@ -401,13 +405,13 @@ var connection = new HubConnectionBuilder()
     .Build();
 ```
 
-Hub และ REST endpoint ควรใช้ authorization policy ที่สอดคล้องกัน แต่แยก scope ตามหน้าที่ เช่น `inventory.read`, `inventory.write` และ `inventory.subscribe`
+ทั้ง Hub และ REST endpoint ควรใช้ authorization policy ที่สอดคล้องกัน แต่แยก scope ตามหน้าที่ เช่น `inventory.read`, `inventory.write` และ `inventory.subscribe` เพื่อไม่ให้ service ได้สิทธิ์มากเกินความจำเป็น
 
-## สิ่งที่ต้องออกแบบเพิ่มก่อนขึ้น production
+## ก่อนขึ้น Production ยังต้องคิดเรื่องอะไรอีกบ้าง
 
 ### Contract และ versioning
 
-การ deploy สอง backends อาจไม่เกิดพร้อมกัน contract จึงต้อง backward compatible:
+การ deploy สอง backends ไม่ได้เกิดพร้อมกันทุกครั้ง ดังนั้น contract ควร backward compatible:
 
 - เพิ่ม field ใหม่แบบ optional
 - อย่าเปลี่ยนความหมายของ field เดิม
@@ -417,7 +421,7 @@ Hub และ REST endpoint ควรใช้ authorization policy ที่ส
 
 ### Observability
 
-ทุก request และ event ควรตามรอยข้าม service ได้:
+เวลาระบบมีปัญหา เราควรตามให้ได้ว่า request หรือ event เดินทางผ่าน service ใดมาบ้าง:
 
 - ส่ง correlation ID หรือใช้ W3C Trace Context
 - เก็บ latency, error rate, retry count และ reconnect count
@@ -426,13 +430,13 @@ Hub และ REST endpoint ควรใช้ authorization policy ที่ส
 
 ### Scale-out
 
-เมื่อ Inventory API มีหลาย instance connection ของ SignalR จะกระจายอยู่คนละเครื่อง การส่งผ่าน `Clients.All` จาก instance หนึ่งจึงต้องมี scale-out solution เช่น Redis backplane หรือ managed SignalR service เพื่อให้ข้อความไปถึง connection ที่อยู่บน instance อื่น
+เมื่อ Inventory API มีหลาย instance ตัว connection ของ SignalR จะกระจายอยู่คนละเครื่อง การส่งผ่าน `Clients.All` จาก instance หนึ่งจึงต้องมี scale-out solution เช่น Redis backplane หรือ managed SignalR service เพื่อให้ข้อความไปถึง connection ที่อยู่บน instance อื่นด้วย
 
-ส่วน REST ควรวางหลัง load balancer และหลีกเลี่ยงการพึ่ง in-memory state ของ instance ใด instance หนึ่ง
+ส่วน REST ควรวางไว้หลัง load balancer และไม่ควรพึ่ง in-memory state ของ instance ใด instance หนึ่ง
 
 ### Failure และ consistency
 
-Distributed system ไม่มี transaction เดียวครอบทั้งสอง database เราจึงต้องกำหนดให้ชัดว่า:
+พอระบบแยกออกจากกันแล้ว เราจะไม่มี transaction เดียวที่ครอบทั้งสอง database จึงต้องตกลง behavior ให้ชัดว่า:
 
 - ถ้า Inventory API timeout Order API จะ reject, retry หรือรับ order ไว้รอตรวจภายหลัง
 - ถ้าตัดสต็อกสำเร็จแต่สร้าง order ไม่สำเร็จ จะชดเชยอย่างไร
@@ -440,9 +444,9 @@ Distributed system ไม่มี transaction เดียวครอบทั
 - ข้อมูลยอมเก่าได้กี่วินาที
 - ถ้า SignalR หลุดนานเท่าไรจึงถือว่า snapshot ใช้งานไม่ได้
 
-คำตอบเหล่านี้มีผลต่อความถูกต้องของระบบมากกว่าการเลือก transport เพียงอย่างเดียว
+คำถามพวกนี้อาจดูเยอะ แต่คำตอบมีผลต่อความถูกต้องของระบบมากกว่าการเลือก transport เสียอีก
 
-## เลือกอะไรในสถานการณ์ไหน
+## สรุปว่าเลือกอะไรในสถานการณ์ไหน
 
 | ความต้องการ | ตัวเลือกแรกที่ควรพิจารณา |
 |---|---|
@@ -453,14 +457,20 @@ Distributed system ไม่มี transaction เดียวครอบทั
 | ทุก message ต้องถูกเก็บและส่งถึงแม้ consumer offline | Message broker |
 | Event stream ปริมาณสูงและต้อง replay ย้อนหลัง | Kafka หรือ streaming platform |
 
-สำหรับกรณีตัวอย่างนี้ คำตอบที่ใช้งานได้จริงคือ:
+สำหรับตัวอย่าง Order API และ Inventory API ผมจะเลือกใช้แบบนี้:
 
 - ใช้ **REST** สำหรับ `GetStock`, `ReserveStock` และ operation ที่ต้องรู้ผลสำเร็จหรือล้มเหลว
 - ใช้ **SignalR** สำหรับ `StockChanged` เพื่อให้ผู้รับที่ online อัปเดตได้ทันที
 - หลัง reconnect ให้ **sync ผ่าน REST**
 - ถ้า `StockChanged` ห้ามสูญหาย ให้เพิ่ม **message broker และ Outbox** ไม่ใช่พยายามทำให้ SignalR กลายเป็น queue
 
-การเลือก protocol ที่ดีไม่ใช่เลือกตัวที่เร็วที่สุด แต่คือการทำให้ failure behavior ตรงกับความสำคัญของข้อมูล เมื่อแยก “คำตอบที่ต้องเชื่อถือ” ออกจาก “สัญญาณที่ต้องรวดเร็ว” ได้ ระบบจะเข้าใจง่าย ทดสอบง่าย และขยายต่อได้โดยไม่ผูกทุกอย่างไว้กับเทคโนโลยีเดียว
+## โดยส่วนตัวคิดว่า
+
+การเลือก protocol ไม่ควรเริ่มจากคำถามว่าตัวไหนเร็วที่สุด หรือตัวไหนกำลังเป็นที่นิยม แต่ควรเริ่มจากข้อมูลของเราต้องการอะไร
+
+ถ้าเป็น operation ที่ต้องรู้ผลสำเร็จหรือล้มเหลวทันที REST เป็นจุดเริ่มต้นที่เข้าใจง่ายและเพียงพอสำหรับระบบส่วนใหญ่ ส่วน SignalR เหมาะกับการแจ้งว่ามีบางอย่างเปลี่ยน เพื่อให้ระบบที่ online อยู่ตอบสนองได้ทันที
+
+สิ่งสำคัญคือเราต้องแยก **คำตอบที่ต้องเชื่อถือ** ออกจาก **สัญญาณที่ต้องรวดเร็ว** ให้ได้ก่อน เมื่อแบ่งหน้าที่ชัดเจน ระบบจะเข้าใจง่าย ทดสอบง่าย และขยายต่อได้โดยไม่ผูกทุกอย่างไว้กับเทคโนโลยีเดียว (ไม่จำเป็นต้องเริ่มด้วย architecture ที่ซับซ้อนเกินความต้องการ)
 
 ## อ่านเพิ่มเติม
 
@@ -469,4 +479,3 @@ Distributed system ไม่มี transaction เดียวครอบทั
 - [Overview of ASP.NET Core SignalR](https://learn.microsoft.com/aspnet/core/signalr/introduction)
 - [Use hubs in ASP.NET Core SignalR](https://learn.microsoft.com/aspnet/core/signalr/hubs)
 - [ASP.NET Core SignalR .NET client](https://learn.microsoft.com/aspnet/core/signalr/dotnet-client)
-
