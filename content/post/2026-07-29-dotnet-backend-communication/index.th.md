@@ -93,7 +93,7 @@ RabbitMQ, Azure Service Bus และ Kafka ไม่ได้เข้ามา
 
 ลองนึกภาพว่า Inventory API ต้องรับประกันว่า Order API จะได้รับ `StockChanged` แม้ในเวลาที่ Order API ล่มอยู่ กรณีนี้ SignalR อย่างเดียวไม่พอ เราควร publish event ไปยัง broker แล้วให้ Order API กลับมา consume เมื่อพร้อมทำงาน ส่วน SignalR ยังสามารถใช้ push event ไปยัง dashboard หรือ connection ที่ online อยู่ได้ตามปกติ
 
-## แบบที่ผมเลือก: REST เป็นคำตอบ SignalR เป็นสัญญาณ
+## ท่าตัวอย่างในบทความนี้: REST เป็นคำตอบ SignalR เป็นสัญญาณ
 
 ![แผนภาพการสื่อสารระหว่าง Order API และ Inventory API ด้วย REST และ SignalR](architecture-diagram.svg)
 
