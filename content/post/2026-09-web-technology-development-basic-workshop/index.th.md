@@ -100,7 +100,7 @@ Software Development เป็นทักษะที่ไม่สามา�
 
 ท้ายที่สุด สิ่งที่อยากฝากไว้มากที่สุดคือ **เครื่องมือเปลี่ยนได้ แต่พื้นฐานที่ดีจะทำให้เราไปต่อได้เสมอ**
 
-![ภาพร่วมกันหลังจบ Web Technology Development Basic Workshop](workshop-group.jpg)
+![บรรยากาศการเตรียมการสอนใน Web Technology Development Basic Workshop](workshop-group.jpg)
 
 ## สื่อการสอน
 
