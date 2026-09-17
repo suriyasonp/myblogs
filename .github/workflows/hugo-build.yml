@@ -1,0 +1,62 @@
+name: Validate Hugo build
+
+on:
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.147.5
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O "${{ runner.temp }}/hugo.deb" \
+            "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb"
+          sudo dpkg -i "${{ runner.temp }}/hugo.deb"
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+      - name: Repair workshop JPEGs for Hugo image processing
+        run: |
+          python -m pip install --disable-pip-version-check pillow
+          python - <<'PY'
+          from pathlib import Path
+          from PIL import Image, ImageFile
+
+          ImageFile.LOAD_TRUNCATED_IMAGES = True
+          root = Path("content/post/2026-09-web-technology-development-basic-workshop")
+
+          for path in sorted(root.glob("*.jpg")):
+              with Image.open(path) as image:
+                  image = image.convert("RGB")
+                  image.save(path, "JPEG", quality=90, optimize=True, progressive=False)
+                  print(f"Repaired {path}")
+          PY
+      - name: Install Node.js dependencies
+        run: '[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true'
+      - name: Check Hugo Version
+        run: hugo version
+      - name: Build with Hugo
+        env:
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "https://suriyasonphu.com/"
