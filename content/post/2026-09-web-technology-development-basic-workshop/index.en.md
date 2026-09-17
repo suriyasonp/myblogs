@@ -102,7 +102,7 @@ Returning to the university was therefore not only an opportunity to share knowl
 
 The main message I wanted to leave with them is simple: **tools will change, but strong foundations will keep taking us forward.**
 
-![Group photo after the Web Technology Development Basic Workshop](workshop-group.jpg)
+![Preparing for the Web Technology Development Basic Workshop](workshop-group.jpg)
 
 ## Workshop Materials
 
