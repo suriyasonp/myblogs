@@ -106,8 +106,8 @@ The main message I wanted to leave with them is simple: **tools will change, but
 
 ## Workshop Materials
 
-The teaching materials and hands-on labs used in this workshop are available on GitHub:
+The teaching materials and hands-on labs used in this workshop are available as a dedicated workshop site:
 
-**[suriyasonp/web-tech-ku-workshop](https://github.com/suriyasonp/web-tech-ku-workshop)**
+**[Web Technology Development Basic Workshop](https://suriyasonp.github.io/web-tech-ku-workshop/)**
 
-The repository contains the learning materials for the backend, frontend, and development workflow covered during the workshop.
+The site brings together the backend, frontend, Git workflow, and hands-on learning materials used during the workshop in a format that is easier to follow than browsing the repository directly.
