@@ -4,6 +4,7 @@ date: 2026-10-06
 draft: false
 slug: "passion-discipline-humility"
 author: "Suriya Sonphu"
+image: cover.webp
 categories:
     - "Growth Mindset"
     - "Personal Development"
